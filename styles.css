@@ -1,0 +1,324 @@
+@font-face {
+    font-family: UbuntuRegular;
+    src: url(./fonts/UbuntuMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: UbuntuItalic;
+    src: url(./fonts/UbuntuMono-Italic.ttf);
+}
+
+@font-face {
+    font-family: UbuntuBold;
+    src: url(./fonts/UbuntuMono-Bold.ttf);
+}
+
+@font-face {
+    font-family: UbuntuBoldItalic;
+    src: url(./fonts/UbuntuMono-BoldItalic.ttf);
+}
+
+*, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: UbuntuRegular;
+}
+
+:root {
+    --bg-color: #77f5ff;
+    --txt-color: #77f5ff;
+    --h2-size: 35px;
+    --h3-size: 20px;
+    --section-margin: 50px 0 0 0;
+}
+
+/* Navigation */
+
+.dropdown.menu>li.is-dropdown-submenu-parent>a::after {
+    display: none;
+}
+
+nav, .top-bar, .top-bar ul {
+    background: black;
+    color: white;
+    padding: unset;
+}
+
+.menu .menu-text {
+    font-weight: unset;
+}
+
+.menu .menu-text.site-title {
+    font-size: 26px;
+}
+
+.menu .menu-text.site-subtitle {
+    line-height: 26px;
+    color: var(--txt-color);
+    text-transform: uppercase;
+}
+
+.dropdown.menu>li.is-dropdown-submenu-parent>a.menu-burger {
+    color: white;
+    padding-right: unset;
+    padding: 25px;
+    font-size: 22px;
+}
+
+/* Header */
+
+header.grid-container-fluid {
+    padding: 25px;
+    background: #eee;
+}
+
+header .cell.info, header .cell.contact {
+    padding: 35px;
+    font-size: 28px;
+    position: relative;
+}
+
+header .cell.info p, header .cell.contact p {
+    /* font-weight: 700; */
+}
+
+header .cell.info {
+    background-color: white;
+    color: #666666;
+}
+
+header .cell.info em {
+    color: black;
+    background-color: var(--bg-color);
+    font-style: unset;
+}
+
+header .cell.contact {
+    background-color: var(--bg-color);
+}
+
+header .arrow-right {
+    display: block;
+    background-color: var(--bg-color);
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+header .cell.contact .arrow-right {
+    background-color: white;
+}
+
+header .arrow-right:after {
+    content: '';
+    background-image: url(./img/arrow-right.svg);
+    background-repeat: no-repeat;
+    width: 125px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 2.5px;
+}
+
+.is-dropdown-submenu {
+    border: none;
+}
+
+ul.menu.vertical.submenu.is-dropdown-submenu.first-sub {
+    min-width: 300px;
+}
+
+li.is-submenu-item.is-dropdown-submenu-item>a {
+    color: var(--txt-color);
+    font-size: var(--h3-size);
+}
+
+li.is-submenu-item.is-dropdown-submenu-item>a:hover {
+    background: white;
+    color: black;
+}
+
+/* Sections */
+
+section>h2, section>h3 {
+    text-align: center;
+}
+
+section {
+    margin: var(--section-margin);
+    position: relative;
+}
+
+section>h2 {
+    font-size: var(--h2-size);
+}
+
+section>h3 {
+    font-size: var(--h3-size);
+    text-transform: uppercase;
+    color: #666666;
+}
+
+/* Curriculum Vitae */
+
+.languages, .tools, .cms {
+    background-color: var(--bg-color);
+    position: relative;
+    margin-top: 25px;
+}
+
+.languages h2, .tools h2, .cms h2 {
+    font-size: calc(var(--h2-size) * .75);
+    width: calc(100% - 150px);
+}
+
+img.skill-icon {
+    width: 150px;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+}
+
+ul.skill-list {
+    font-size: 18px;
+    columns: 2;
+    -webkit-columns: 2;
+}
+
+/* Experience */
+
+.experience .grid-x {
+    background-color: #222222;
+}
+
+ul#experience-tabs li h2 {
+    color: white;
+    font-size: 24px;
+    line-height: 48px;
+    padding: 15px 25px;
+    margin: inherit;
+}
+
+ul#experience-tabs {
+    background-color: #000000;
+    border: none;
+}
+
+ul#experience-tabs {
+    background-color: #000000;
+}
+
+.tabs-title>a {
+    padding: 15px 25px;
+    font-size: 18px;
+    color: white;
+}
+
+.tabs-title>a:focus, .tabs-title>a[aria-selected=true] {
+    background: white;
+    color: black;
+}
+
+.tabs-title>a:hover {
+    background: #111111;
+    color: white;
+}
+
+.tabs-content, .tabs-content.vertical {
+    background: none;
+    border: none;
+    color: white;
+}
+
+.tab-nav {
+    padding: 15px 25px;
+    background: #111111;
+    color: #666666;
+}
+
+.tab-nav a {
+    color: white;
+    font-size: 18px;
+    line-height: 48px;
+    border-bottom: 1px solid white;
+}
+
+.tabs-title a.note:after {
+    content: '*';
+    color: #77f5ff;
+    margin-left: 5px;
+}
+
+.note-txt {
+    color: white;
+    padding: 25px 25px;
+    background: #000;
+    border-top: 2px solid #444444;
+    text-transform: uppercase;
+}
+
+.note-txt em {
+    color: #77f5ff;
+    font-style: initial;
+}
+
+.download-links {
+    border-top: 2px solid #111111;
+    color: white;
+    text-align: right;
+}
+
+.download-links a {
+    color: white;
+    padding: 18px 25px;
+    display: inline-block;
+    max-height: 74px;
+}
+
+.download-links a img {
+    width: 40px;
+}
+
+.download-links a.doc-link {
+    border-right: 2px solid #111111;
+}
+
+.experience-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr 5.5fr .5fr;
+    grid-template-areas: "." "." ".";
+}
+
+.tabs-panel .lbl {
+    padding-left: 85px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.tabs-panel .lbl:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    min-width: 75px;
+    color: #77f5ff;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.lbl.dates:before {
+    content: 'Dates:'
+}
+
+.lbl.status:before {
+    content: 'Status:'
+}
+
+.lbl.job-title:before {
+    content: 'Title:'
+}
+
+.lbl.duties:before {
+    content: 'Duties:'
+}

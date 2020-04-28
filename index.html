@@ -46,25 +46,30 @@
     </div>
     
       <header class="grid-container-fluid">
-        <div class="grid-container">
-        <div class="grid-x grid-margin-x">
-          <div class="large-8 cell info">
-            <p>
-              I am a <em>Web Developer</em> with a <em>UI/UX</em> bent living in Houston, Texas.
-            </p>
+        <section class="video-bg">
+			<div class="video-container">
+				<video src="./img/blurred-video.mp4" autoplay muted loop></video>
+			</div>
+			<div class="content">
+				<div class="grid-container">
+                    <div class="grid-x grid-margin-x">
+                      <div class="large-8 cell info">
+                        <p>
+                          Alexander Curtis is a <em>Web Developer</em> with over <br/><em>17 years</em> of experience. I specialize in Web Development and <em>UI/UX Design</em>. </p><p>Currently residing  in Houston, Texas.
+                        </p>
 
-            <p>
-              I make <em>Full-Stack Applications</em> in exchange for kolaches & donuts.
-            </p>
-            <a class="arrow-right" href=""></a>
-          </div>
-          <div class="large-4 cell contact">
-            <p>I am currently accepting new assignments.</p>
-
-            <p>Contact me :)</p>
-            <a class="arrow-right" href=""></a>
-          </div>
-          </div>
+                        <!-- <a class="arrow-right" href=""></a> -->
+                      </div>
+                      <div class="large-4 cell contact">
+                        <p>I am currently accepting new assignments.</p>
+            
+                        <p><em>Contact me :)</em></p>
+                        <!-- <a class="arrow-right" href=""></a> -->
+                      </div>
+                      </div>
+			</div>
+		</section>
+        
         </div>
       </header>
       <div class="grid-container">
@@ -137,7 +142,7 @@
                 <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Houston First</a></li>
                 <li class="tabs-title"><a class="note" href="#panel2v">American College Consortium</a></li>
                 <li class="tabs-title"><a class="note" href="#panel3v">Community Health Choice</a></li>
-                <li class="tabs-title"><a class="note" href="#panel4v">KIPP</a></li>
+                <li class="tabs-title"><a class="note" href="#panel4v">KIPP Foundation</a></li>
                 <li class="tabs-title"><a href="#panel5v">Houston Chronicle</a></li>
                 <li class="tabs-title"><a class="note" href="#panel6v">Rice University</a></li>
                 <li class="tabs-title"><a class="note" href="#panel7v">City Of Houston</a></li>
@@ -150,14 +155,15 @@
                   <em>*</em> = Consultant / Contractor
               </div>
             </div>
+            
             <div class="cell medium-8 experience-content">
                 <div class="tab-nav">
-                <a href="#" onclick="event.preventDefault();$('li.tabs-title.is-active').prev().click();">Previous</a> | <a href="#" onclick="event.preventDefault();$('li.tabs-title.is-active').next().click();">Next</a>
+                <a id="previous-btn" href="#" >Previous</a> | <a id="next-btn" href="#">Next</a>
                 </div>
               <div class="tabs-content vertical" data-tabs-content="experience-tabs">
                 <div class="tabs-panel is-active" id="panel1v">
                     <div class="content">
-                        <h3>Houston First</h3>
+                        <h3 class="company-name">Houston First</h3>
                   <p class="subtitle">Destination Marketing Organization for Houston, Texas</p>
                     <p class="lbl dates">February 2015 - Present</p>
                     <p class="lbl status">Full-Time Employee</p>
@@ -172,44 +178,94 @@
                     </div>
                   
                 <div class="tabs-panel" id="panel2v">
-                  <p>Two</p>
-                  <p>Check me out! I'm a super cool Tab panel with text content!</p>
+                  <h3 class="company-name">American College Consortium</h3>
+                  <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                    <p class="lbl dates">2000 - 2012</p>
+                    <p class="lbl status">Consultant / Contractor</p>
+                    <p class="lbl job-title">Web Developer</p>
+                    <div class="lbl duties"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur repudiandae dolor cupiditate fugit, voluptatibus vel ipsum rerum magnam quaerat doloribus accusamus! Ad, vero obcaecati commodi ratione earum molestiae eius laboriosam?</p>
+                    <p>Perspiciatis debitis a, aliquid totam omnis aperiam sunt tempora nostrum repudiandae unde, explicabo et, repellendus modi. Sequi sed accusantium quae, architecto omnis laborum iusto dolorem quasi placeat dolore. In, id.</p></div>
                 </div>
                 <div class="tabs-panel" id="panel3v">
-                  <p>Three</p>
-                  <p>Check me out! I'm a super cool Tab panel with text content!</p>
+                    <h3 class="company-name">Community Health Choice</h3>
+                    <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                      <p class="lbl dates">2000 - 2012</p>
+                      <p class="lbl status">Consultant / Contractor</p>
+                      <p class="lbl job-title">Web Developer</p>
+                      <div class="lbl duties"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur repudiandae dolor cupiditate fugit, voluptatibus vel ipsum rerum magnam quaerat doloribus accusamus! Ad, vero obcaecati commodi ratione earum molestiae eius laboriosam?</p>
+                      <p>Perspiciatis debitis a, aliquid totam omnis aperiam sunt tempora nostrum repudiandae unde, explicabo et, repellendus modi. Sequi sed accusantium quae, architecto omnis laborum iusto dolorem quasi placeat dolore. In, id.</p></div>
                 </div>
                 <div class="tabs-panel" id="panel4v">
-                  <p>Four</p>
-                  <p>Check me out! I'm a super cool Tab panel with text content!</p>
+                    <h3 class="company-name">KIPP Foundation</h3>
+                    <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                      <p class="lbl dates">2000 - 2012</p>
+                      <p class="lbl status">Consultant / Contractor</p>
+                      <p class="lbl job-title">Web Developer</p>
+                      <div class="lbl duties"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur repudiandae dolor cupiditate fugit, voluptatibus vel ipsum rerum magnam quaerat doloribus accusamus! Ad, vero obcaecati commodi ratione earum molestiae eius laboriosam?</p>
+                      <p>Perspiciatis debitis a, aliquid totam omnis aperiam sunt tempora nostrum repudiandae unde, explicabo et, repellendus modi. Sequi sed accusantium quae, architecto omnis laborum iusto dolorem quasi placeat dolore. In, id.</p></div>
                 </div>
                 <div class="tabs-panel" id="panel5v">
-                  <p>Five</p>
-                  <p>Check me out! I'm a super cool Tab panel with text content!</p>
+                    <h3 class="company-name">Houston Chronicle</h3>
+                    <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                      <p class="lbl dates">2000 - 2012</p>
+                      <p class="lbl status">Consultant / Contractor</p>
+                      <p class="lbl job-title">Web Developer</p>
+                      <div class="lbl duties"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur repudiandae dolor cupiditate fugit, voluptatibus vel ipsum rerum magnam quaerat doloribus accusamus! Ad, vero obcaecati commodi ratione earum molestiae eius laboriosam?</p>
+                      <p>Perspiciatis debitis a, aliquid totam omnis aperiam sunt tempora nostrum repudiandae unde, explicabo et, repellendus modi. Sequi sed accusantium quae, architecto omnis laborum iusto dolorem quasi placeat dolore. In, id.</p></div>
                 </div>
                 <div class="tabs-panel" id="panel6v">
-                  <p>Six</p>
-                  <p>Check me out! I'm a super cool Tab panel with text content!</p>
+                    <h3 class="company-name">Rice University</h3>
+                    <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                      <p class="lbl dates">2000 - 2012</p>
+                      <p class="lbl status">Consultant / Contractor</p>
+                      <p class="lbl job-title">Web Developer</p>
+                      <div class="lbl duties"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur repudiandae dolor cupiditate fugit, voluptatibus vel ipsum rerum magnam quaerat doloribus accusamus! Ad, vero obcaecati commodi ratione earum molestiae eius laboriosam?</p>
+                      <p>Perspiciatis debitis a, aliquid totam omnis aperiam sunt tempora nostrum repudiandae unde, explicabo et, repellendus modi. Sequi sed accusantium quae, architecto omnis laborum iusto dolorem quasi placeat dolore. In, id.</p></div>
                 </div>
                 <div class="tabs-panel" id="panel7v">
-                    <p>Six</p>
-                    <p>Check me out! I'm a super cool Tab panel with text content!</p>
+                    <h3 class="company-name">City of Houston</h3>
+                  <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                    <p class="lbl dates">2000 - 2012</p>
+                    <p class="lbl status">Consultant / Contractor</p>
+                    <p class="lbl job-title">Web Developer</p>
+                    <div class="lbl duties"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur repudiandae dolor cupiditate fugit, voluptatibus vel ipsum rerum magnam quaerat doloribus accusamus! Ad, vero obcaecati commodi ratione earum molestiae eius laboriosam?</p>
+                    <p>Perspiciatis debitis a, aliquid totam omnis aperiam sunt tempora nostrum repudiandae unde, explicabo et, repellendus modi. Sequi sed accusantium quae, architecto omnis laborum iusto dolorem quasi placeat dolore. In, id.</p></div>
                   </div>
                   <div class="tabs-panel" id="panel8v">
-                    <p>Six</p>
-                    <p>Check me out! I'm a super cool Tab panel with text content!</p>
+                    <h3 class="company-name">Chevron Inc., USA</h3>
+                  <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                    <p class="lbl dates">2000 - 2012</p>
+                    <p class="lbl status">Consultant / Contractor</p>
+                    <p class="lbl job-title">Web Developer</p>
+                    <div class="lbl duties"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur repudiandae dolor cupiditate fugit, voluptatibus vel ipsum rerum magnam quaerat doloribus accusamus! Ad, vero obcaecati commodi ratione earum molestiae eius laboriosam?</p>
+                    <p>Perspiciatis debitis a, aliquid totam omnis aperiam sunt tempora nostrum repudiandae unde, explicabo et, repellendus modi. Sequi sed accusantium quae, architecto omnis laborum iusto dolorem quasi placeat dolore. In, id.</p></div>
                   </div>
                   <div class="tabs-panel" id="panel9v">
-                    <p>Six</p>
-                    <p>Check me out! I'm a super cool Tab panel with text content!</p>
+                    <h3 class="company-name">Universal Weather &amp; Aviation</h3>
+                  <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                    <p class="lbl dates">2000 - 2012</p>
+                    <p class="lbl status">Consultant / Contractor</p>
+                    <p class="lbl job-title">Web Developer</p>
+                    <div class="lbl duties"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur repudiandae dolor cupiditate fugit, voluptatibus vel ipsum rerum magnam quaerat doloribus accusamus! Ad, vero obcaecati commodi ratione earum molestiae eius laboriosam?</p>
+                    <p>Perspiciatis debitis a, aliquid totam omnis aperiam sunt tempora nostrum repudiandae unde, explicabo et, repellendus modi. Sequi sed accusantium quae, architecto omnis laborum iusto dolorem quasi placeat dolore. In, id.</p></div>
                   </div>
                   <div class="tabs-panel" id="panel10v">
-                    <p>Six</p>
-                    <p>Check me out! I'm a super cool Tab panel with text content!</p>
+                    <h3 class="company-name">British Petroleum</h3>
+                  <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                    <p class="lbl dates">2000 - 2012</p>
+                    <p class="lbl status">Consultant / Contractor</p>
+                    <p class="lbl job-title">Web Developer</p>
+                    <div class="lbl duties"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur repudiandae dolor cupiditate fugit, voluptatibus vel ipsum rerum magnam quaerat doloribus accusamus! Ad, vero obcaecati commodi ratione earum molestiae eius laboriosam?</p>
+                    <p>Perspiciatis debitis a, aliquid totam omnis aperiam sunt tempora nostrum repudiandae unde, explicabo et, repellendus modi. Sequi sed accusantium quae, architecto omnis laborum iusto dolorem quasi placeat dolore. In, id.</p></div>
                   </div>
                   <div class="tabs-panel" id="panel11v">
-                    <p>Six</p>
-                    <p>Check me out! I'm a super cool Tab panel with text content!</p>
+                    <h3 class="company-name">Houston Independent School District</h3>
+                  <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                    <p class="lbl dates">2000 - 2012</p>
+                    <p class="lbl status">Consultant / Contractor</p>
+                    <p class="lbl job-title">Web Developer</p>
+                    <div class="lbl duties"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur repudiandae dolor cupiditate fugit, voluptatibus vel ipsum rerum magnam quaerat doloribus accusamus! Ad, vero obcaecati commodi ratione earum molestiae eius laboriosam?</p>
+                    <p>Perspiciatis debitis a, aliquid totam omnis aperiam sunt tempora nostrum repudiandae unde, explicabo et, repellendus modi. Sequi sed accusantium quae, architecto omnis laborum iusto dolorem quasi placeat dolore. In, id.</p></div>
                   </div>
               </div>
               <div class="download-links">
@@ -219,9 +275,35 @@
             </div>
           </div>
       </section>
+      
     </div>
 
+    <script>
+        let tabs = 'li.tabs-title';
+        let activeTab = `${tabs}.is-active`;
+        let last = $(tabs).length - 1;
 
+        $("#previous-btn").on("click", function(){
+            event.preventDefault();
+            
+            if($(activeTab)[0] == $(tabs)[0])
+            {
+                $(tabs)[last].click();
+            } else {
+                $(activeTab).prev().click();
+            }
+        });
+        $("#next-btn").on("click", function(){
+            event.preventDefault();
+
+            if($(activeTab)[0] == $(tabs)[last])
+            {
+                $(tabs)[0].click();
+            } else {
+                $(activeTab).next().click();
+            }
+        });
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.0/js/foundation.min.js"
       integrity="sha256-/PFxCnsMh+nTuM0k3VJCRch1gwnCfKjaP8rJNq5SoBg="

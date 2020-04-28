@@ -23,8 +23,7 @@
 }
 
 :root {
-    --bg-color: #77f5ff;
-    --txt-color: #77f5ff;
+    --primary-color: #77f5ff;
     --h2-size: 35px;
     --h3-size: 20px;
     --section-margin: 50px 0 0 0;
@@ -37,9 +36,19 @@
 }
 
 nav, .top-bar, .top-bar ul {
-    background: black;
+    background: unset;
     color: white;
     padding: unset;
+}
+
+nav {
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+}
+
+nav {
+    background: rgba(0, 0, 0, 1);
 }
 
 .menu .menu-text {
@@ -52,7 +61,7 @@ nav, .top-bar, .top-bar ul {
 
 .menu .menu-text.site-subtitle {
     line-height: 26px;
-    color: var(--txt-color);
+    color: var(--primary-color);
     text-transform: uppercase;
 }
 
@@ -65,39 +74,36 @@ nav, .top-bar, .top-bar ul {
 
 /* Header */
 
-header.grid-container-fluid {
-    padding: 25px;
-    background: #eee;
-}
-
 header .cell.info, header .cell.contact {
     padding: 35px;
     font-size: 28px;
     position: relative;
 }
 
-header .cell.info p, header .cell.contact p {
-    /* font-weight: 700; */
-}
-
 header .cell.info {
-    background-color: white;
-    color: #666666;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ffffff;
 }
 
 header .cell.info em {
-    color: black;
-    background-color: var(--bg-color);
+    color: var(--primary-color);
     font-style: unset;
 }
 
+header .cell.contact em {
+    /* background-color: white; */
+    font-style: unset;
+    /* border-bottom: 1px solid black; */
+}
+
 header .cell.contact {
-    background-color: var(--bg-color);
+    color: black;
+    background-color: var(--primary-color);
 }
 
 header .arrow-right {
     display: block;
-    background-color: var(--bg-color);
+    background-color: var(--primary-color);
     width: 100px;
     height: 30px;
     position: absolute;
@@ -127,10 +133,12 @@ header .arrow-right:after {
 
 ul.menu.vertical.submenu.is-dropdown-submenu.first-sub {
     min-width: 300px;
+    z-index: 9999;
+    background: black;
 }
 
 li.is-submenu-item.is-dropdown-submenu-item>a {
-    color: var(--txt-color);
+    color: var(--primary-color);
     font-size: var(--h3-size);
 }
 
@@ -163,7 +171,7 @@ section>h3 {
 /* Curriculum Vitae */
 
 .languages, .tools, .cms {
-    background-color: var(--bg-color);
+    background-color: var(--primary-color);
     position: relative;
     margin-top: 25px;
 }
@@ -190,6 +198,7 @@ ul.skill-list {
 
 .experience .grid-x {
     background-color: #222222;
+    margin-top: 25px;
 }
 
 ul#experience-tabs li h2 {
@@ -225,6 +234,11 @@ ul#experience-tabs {
     color: white;
 }
 
+.tabs-title.is-active>a:hover {
+    background-color: white;
+    color: black;
+}
+
 .tabs-content, .tabs-content.vertical {
     background: none;
     border: none;
@@ -252,7 +266,7 @@ ul#experience-tabs {
 
 .note-txt {
     color: white;
-    padding: 25px 25px;
+    padding: 18px 25px;
     background: #000;
     border-top: 2px solid #444444;
     text-transform: uppercase;
@@ -277,7 +291,7 @@ ul#experience-tabs {
 }
 
 .download-links a img {
-    width: 40px;
+    width: 25px;
 }
 
 .download-links a.doc-link {
@@ -289,6 +303,10 @@ ul#experience-tabs {
     grid-template-columns: 1fr;
     grid-template-rows: .5fr 5.5fr .5fr;
     grid-template-areas: "." "." ".";
+}
+
+h3.company-name {
+    margin-bottom: unset;
 }
 
 .tabs-panel .lbl {
@@ -322,3 +340,68 @@ ul#experience-tabs {
 .lbl.duties:before {
     content: 'Duties:'
 }
+
+/* Video Background */
+
+.video-bg {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+    margin: inherit;
+}
+
+.video-bg .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: black url('./img/blurred-video-backup.png') no-repeat center center/cover;
+}
+
+.video-bg .video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.video-bg .video-container:after {
+    content: '';
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.25);
+    position: absolute;
+}
+
+.video-bg:after {
+    content: '';
+    background: url(./img/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: rotate(90deg);
+    filter: invert(1);
+    z-index: 99999;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.video-bg .content {
+    z-index: 2;
+}
+
+/* Portfolio */

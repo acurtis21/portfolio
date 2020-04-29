@@ -111,7 +111,7 @@ header .cell.info {
     color: #ffffff;
 }
 
-header .cell.info p {
+header .cell.info h1 {
     font-size: calc(35px + (49.8 - 18.48) * ((100vw - 640px) / (1920 - 640)));
 }
 
@@ -612,5 +612,6 @@ footer.grid-container-fluid>div>p {
     }
     .experience-content {
         grid-template-rows: .5fr 5.5fr;
+        grid-template-columns: 100%;
     }
 }

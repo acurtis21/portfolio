@@ -212,10 +212,12 @@ section>h3 {
 .grid-container.main {
     background: white;
     padding: 0 35px;
+    overflow: hidden;
 }
 
 .languages, .tools, .cms {
-    background: var(--primary-color);
+    background: white;
+    border: 2px solid var(--primary-color);
     position: relative;
     margin-top: 25px;
     padding: 25px;
@@ -227,11 +229,11 @@ section>h3 {
 }
 
 img.skill-icon {
-    width: 200px;
+    width: 150px;
     position: absolute;
-    top: 0;
-    right: 0;
-    opacity: .1;
+    top: -35px;
+    right: -35px;
+    opacity: 1;
 }
 
 ul.skill-list {
@@ -613,5 +615,8 @@ footer.grid-container-fluid>div>p {
     .experience-content {
         grid-template-rows: .5fr 5.5fr;
         grid-template-columns: 100%;
+    }
+    .tabs-panel .lbl:before {
+        font-size: 14px;
     }
 }

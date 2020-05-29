@@ -158,7 +158,9 @@ nav {
 }
 
 .menu .menu-text.site-title a {
-    color: white;
+    color: black;
+    background: #77f5ff;
+    text-transform: lowercase;
 }
 
 .dropdown.menu>li.is-dropdown-submenu-parent>a.menu-burger {

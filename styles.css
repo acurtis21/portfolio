@@ -178,13 +178,18 @@ header .cell.info, header .cell.contact {
 }
 
 header .cell.info {
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
     color: white;
 }
 
 header .cell.info h1 {
-    font-size: calc(35px + (49.8 - 18.48) * ((100vw - 640px) / (1920 - 640)));
+    font-size: calc(25px + (49.8 - 18.48) * ((100vw - 640px) / (1920 - 640)));
     text-align: left;
+}
+
+header .cell.info h1>span {
+    font-size: 45%;
+    color: var(--primary-color);
 }
 
 header .cell.info em {
@@ -567,7 +572,7 @@ h3.company-name {
     width: 100%;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.5);
     position: absolute;
 }
 
@@ -715,7 +720,7 @@ footer.grid-container-fluid>div>p {
         margin-right: 10px;
     }
     .languages, .tools, .cms {
-        padding: 1em;
+        padding: 1.5em;
         margin: .5em 1em;
     }
     .video-bg:after {
@@ -765,5 +770,21 @@ footer.grid-container-fluid>div>p {
     }
     h3.company-name {
         font-size: 1.5em;
+    }
+    .tabs-title>a {
+        font-size: .75em;
+        padding: 1em 2em;
+    }
+    ul#experience-tabs {
+        min-height: 500px;
+    }
+    ul#experience-tabs li h2 {
+        line-height: 1em;
+    }
+    .languages h2, .tools h2, .cms h2 {
+        font-size: 1.25em;
+    }
+    header .cell.info, header .cell.contact {
+        padding: 0;
     }
 }

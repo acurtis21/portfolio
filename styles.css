@@ -1,31 +1,101 @@
 @font-face {
-    font-family: UbuntuRegular;
-    src: url(./fonts/UbuntuMono-Regular.ttf);
+    font-family: Montserrat-Black;
+    src: url(./fonts/Montserrat-Black.ttf);
 }
 
 @font-face {
-    font-family: UbuntuItalic;
-    src: url(./fonts/UbuntuMono-Italic.ttf);
+    font-family: Montserrat-BlackItalic;
+    src: url(./fonts/Montserrat-BlackItalic.ttf);
 }
 
 @font-face {
-    font-family: UbuntuBold;
-    src: url(./fonts/UbuntuMono-Bold.ttf);
+    font-family: Montserrat-Bold;
+    src: url(./fonts/Montserrat-Bold.ttf);
 }
 
 @font-face {
-    font-family: UbuntuBoldItalic;
-    src: url(./fonts/UbuntuMono-BoldItalic.ttf);
+    font-family: Montserrat-BoldItalic;
+    src: url(./fonts/Montserrat-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-ExtraBold;
+    src: url(./fonts/Montserrat-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-ExtraBoldItalic;
+    src: url(./fonts/Montserrat-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-ExtraLight;
+    src: url(./fonts/Montserrat-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-ExtraLightItalic;
+    src: url(./fonts/Montserrat-ExtraLightItalic.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Italic;
+    src: url(./fonts/Montserrat-Italic.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(./fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-LightItalic;
+    src: url(./fonts/Montserrat-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(./fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-MediumItalic;
+    src: url(./fonts/Montserrat-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(./fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src: url(./fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-SemiBoldItalic;
+    src: url(./fonts/Montserrat-SemiBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Thin;
+    src: url(./fonts/Montserrat-Thin.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-ThinItalic;
+    src: url(./fonts/Montserrat-ThinItalic.ttf);
 }
 
 *, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    font-family: UbuntuRegular;
+    font-family: Montserrat-Medium, sans-serif;
 }
 
 :root {
     --primary-color: #77f5ff;
-    --h2-size: 35px;
-    --h3-size: 20px;
+    --h2-size: 2em;
+    --h3-size: 1em;
     --section-margin: 50px 0 0 0;
 }
 
@@ -94,7 +164,7 @@ nav {
 .dropdown.menu>li.is-dropdown-submenu-parent>a.menu-burger {
     color: white;
     padding-right: unset;
-    padding: 25px;
+    padding: 1em;
     font-size: 22px;
 }
 
@@ -121,9 +191,7 @@ header .cell.info em {
 }
 
 header .cell.contact em {
-    /* background-color: white; */
     font-style: unset;
-    /* border-bottom: 1px solid black; */
 }
 
 header .cell.contact {
@@ -150,7 +218,7 @@ header .arrow-right:after {
     background-image: url(./img/arrow-right.svg);
     background-repeat: no-repeat;
     width: 125px;
-    height: 25px;
+    height: 2em;
     display: block;
     position: absolute;
     right: 0;
@@ -171,6 +239,13 @@ ul.menu.vertical.submenu.is-dropdown-submenu.first-sub {
 li.is-submenu-item.is-dropdown-submenu-item>a {
     color: white;
     font-size: var(--h3-size);
+    padding: 1.5em;
+    line-height: 1.5;
+    border-bottom: 1px solid #222;
+}
+
+li.is-submenu-item.is-dropdown-submenu-item:last-child>a {
+    border-bottom: none;
 }
 
 li.is-submenu-item.is-dropdown-submenu-item>a:hover {
@@ -199,6 +274,12 @@ section {
 
 section>h2 {
     font-size: var(--h2-size);
+    font-weight: 600;
+    font-family: Montserrat-Bold, sans-serif;
+    display: inline;
+    margin: auto;
+    font-size: 2.5em;
+    line-height: 1;
 }
 
 section>h3 {
@@ -211,49 +292,58 @@ section>h3 {
 
 .grid-container.main {
     background: white;
-    padding: 0 35px;
+    padding: 0 2em;
     overflow: hidden;
 }
 
 .languages, .tools, .cms {
     background: white;
-    border: 2px solid var(--primary-color);
     position: relative;
-    margin-top: 25px;
-    padding: 25px;
+    margin-top: 2em;
+    padding: 2em;
+    background: #dfffff;
+    color: black;
 }
 
 .languages h2, .tools h2, .cms h2 {
-    font-size: calc(var(--h2-size) * .75);
+    font-size: calc(var(--h2-size) * .65);
     width: calc(100% - 150px);
+    line-height: 1.25;
+    margin-bottom: 1em;
+    font-weight: 600;
+    font-family: Montserrat-Bold, sans-serif;
+    padding-bottom: .5em;
 }
 
 img.skill-icon {
-    width: 150px;
     position: absolute;
-    top: -35px;
-    right: -35px;
     opacity: 1;
+    top: .5em;
+    right: 1em;
+    width: 120px;
 }
 
 ul.skill-list {
-    font-size: 18px;
+    font-size: 1em;
     columns: 2;
     -webkit-columns: 2;
+    column-gap: 2em;
+    font-weight: 300;
+    padding-top: 1em;
 }
 
 /* Experience */
 
 .experience .grid-x {
     background-color: #222222;
-    margin-top: 25px;
+    margin-top: 2em;
 }
 
 ul#experience-tabs li h2 {
     color: white;
-    font-size: 24px;
-    line-height: 48px;
-    padding: 15px 25px;
+    font-size: 1em;
+    line-height: 3em;
+    padding: 1em 1.5em;
     margin: inherit;
 }
 
@@ -264,27 +354,37 @@ ul#experience-tabs {
 
 ul#experience-tabs {
     background-color: #000000;
+    min-height: 700px;
 }
 
 .tabs-title>a {
-    padding: 15px 25px;
-    font-size: 18px;
+    padding: 1em 1.5em;
+    font-size: 1em;
     color: white;
+    font-weight: 300;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    outline: none;
 }
 
 .tabs-title>a:focus, .tabs-title>a[aria-selected=true] {
-    background: white;
-    color: black;
+    background: #222;
+    color: #fff;
+    border-color: #222;
 }
 
 .tabs-title>a:hover {
-    background: #111111;
+    /* background: #fff;
+    color: #000; */
+    background: black;
     color: white;
+    border-color: #333;
 }
 
 .tabs-title.is-active>a:hover {
-    background-color: white;
-    color: black;
+    background-color: #222;
+    color: #fff;
+    border-color: #222;
 }
 
 .tabs-content, .tabs-content.vertical {
@@ -294,15 +394,17 @@ ul#experience-tabs {
 }
 
 .tab-nav {
-    padding: 15px 25px;
+    padding: 1em 1.5em;
     background: #111111;
     color: #666666;
 }
 
 .tab-nav a {
     color: white;
-    font-size: 18px;
-    line-height: 48px;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 3em;
+    margin: 0 .5em;
 }
 
 .tabs-title a.note:after {
@@ -313,12 +415,24 @@ ul#experience-tabs {
     font-size: xx-small;
 }
 
+.tabs-panel {
+    padding: 2em;
+}
+
+p.lbl.dates {
+    margin-top: 1em;
+}
+
+p {
+    font-size: 1em;
+}
+
 .note-txt {
-    color: white;
-    padding: 18px 25px;
+    color: #9b9b9b;
+    padding: 1em 1.5em;
     background: #000;
-    border-top: 2px solid #444444;
-    text-transform: uppercase;
+    font-size: 85%;
+    line-height: 3em;
 }
 
 .note-txt em {
@@ -336,13 +450,12 @@ ul#experience-tabs {
 
 .download-links a {
     color: white;
-    padding: 18px 25px;
+    padding: 1.5em;
     display: inline-block;
-    max-height: 74px;
 }
 
 .download-links a img {
-    width: 25px;
+    width: 2em;
 }
 
 .download-links a.doc-link {
@@ -363,22 +476,26 @@ h3.company-name {
 .tabs-panel .lbl {
     padding-left: 85px;
     position: relative;
-    margin-bottom: 5px;
+    margin-bottom: 1.5em;
 }
 
 .tabs-panel .lbl a {
     color: var(--primary-color);
     text-decoration: underline;
+    margin: 0 .5em;
 }
 
 .tabs-panel .lbl:before {
     content: '';
     position: absolute;
     left: 0;
-    min-width: 75px;
+    min-width: 65px;
     color: var(--primary-color);
     text-transform: uppercase;
     text-align: right;
+    color: #999;
+    font-size: 85%;
+    line-height: 2;
 }
 
 .lbl.dates:before {
@@ -428,6 +545,7 @@ h3.company-name {
     left: 50%;
     transform: translate(-50%, -50%);
     object-fit: cover;
+    filter: grayscale(1);
 }
 
 .video-bg .video-container:after {
@@ -453,7 +571,7 @@ h3.company-name {
     width: 100px;
     height: 100px;
     position: absolute;
-    bottom: 20px;
+    bottom: 3em;
 }
 
 .video-bg .content {
@@ -463,18 +581,18 @@ h3.company-name {
 /* Portfolio */
 
 section.portfolio {
-    padding-bottom: 25px;
+    padding-bottom: 2em;
 }
 
 div.port {
-    margin-top: 25px;
+    margin-top: 2em;
 }
 
 .port>.port-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: repeat(2, 250px);
-    grid-gap: 1rem;
+    grid-template-rows: repeat(2, 200px);
+    grid-gap: 2rem;
     grid-auto-flow: dense;
     list-style-type: none;
     margin-left: unset;
@@ -486,7 +604,7 @@ div.port {
 
 .port>.port-list>li>figure {
     height: 100%;
-    background: black;
+    background: #dfffff;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -496,54 +614,26 @@ div.port {
 
 .port>.port-list>li>figure>.port-txt {
     text-align: center;
-    padding: 75px 20px;
-    color: white;
+    padding: 2em;
+    color: black;
     position: relative;
     z-index: 999;
 }
 
 .port>.port-list>li>figure>.port-txt>h3 {
-    font-size: 25px;
+    font-size: 1.5em;
     line-height: 1.25;
 }
 
 .port>.port-list>li>figure>.port-txt>img.arrow {
-    filter: invert(1);
     max-width: 75px;
-    margin-top: 25px;
-}
-
-.port>.port-list>li:nth-child(1)>figure {
-    background-color: #2966b1;
-}
-
-.port>.port-list>li:nth-child(2)>figure {
-    background-color: #4840be;
-}
-
-.port>.port-list>li:nth-child(3)>figure {
-    background-color: #039be5;
-}
-
-.port>.port-list>li:nth-child(4)>figure {
-    background-color: #ed3a6b;
-}
-
-.port>.port-list>li:nth-child(5)>figure {
-    background-color: #f0595d;
-}
-
-.port>.port-list>li:nth-child(6)>figure {
-    background-color: #084773;
-}
-
-.port>.port-list>li:nth-child(6)>figure {
-    background-color: #00275f;
+    margin-top: 2em;
 }
 
 .port>.port-list>li:hover>figure {
     background: white;
     border: 2px solid rgba(0, 0, 0, 1);
+    border: 2px solid var(--primary-color);
 }
 
 .port>.port-list>li:hover>figure a {
@@ -575,9 +665,9 @@ footer ul.footer-links li {
 }
 
 footer ul.footer-links li a {
-    padding: 25px;
+    padding: 1.5em 2em;
     display: block;
-    font-size: 20px;
+    font-size: 1.25em;
     color: #77f5ff;
 }
 
@@ -585,12 +675,12 @@ footer.grid-container-fluid>div>p {
     color: white;
     margin: 0;
     text-align: center;
-    padding: 0 0 20px 0;
+    padding: 0 0 1em 0;
 }
 
 @media screen and (max-width: 64em) {
     .grid-container.main {
-        padding: 0 10px;
+        padding: 0 1em;
     }
     .tabs-panel .lbl {
         padding-left: 0;
@@ -605,8 +695,8 @@ footer.grid-container-fluid>div>p {
         margin-right: 10px;
     }
     .languages, .tools, .cms {
-        padding: 10px;
-        margin: 5px;
+        padding: 1em;
+        margin: .5em 1em;
     }
     .video-bg:after {
         width: 75px;
@@ -618,5 +708,10 @@ footer.grid-container-fluid>div>p {
     }
     .tabs-panel .lbl:before {
         font-size: 14px;
+    }
+    img.skill-icon {
+        top: 0;
+        right: 0;
+        width: 90px;
     }
 }

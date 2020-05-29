@@ -94,9 +94,9 @@
 
 :root {
     --primary-color: #77f5ff;
-    --h2-size: 2em;
+    --h2-size: 1.5em;
     --h3-size: 1em;
-    --section-margin: 50px 0 0 0;
+    --section-margin: 2em 0 0 0;
 }
 
 body {
@@ -279,11 +279,11 @@ section {
 }
 
 section>h2 {
-    font-size: var(--h2-size);
     font-weight: 600;
     font-family: Montserrat-Bold, sans-serif;
-    display: inline;
-    margin: auto;
+    display: block;
+    margin: 2em 0 1em 0;
+    text-align: left;
     font-size: 2.5em;
     line-height: 1;
 }
@@ -312,7 +312,7 @@ section>h3 {
 }
 
 .languages h2, .tools h2, .cms h2 {
-    font-size: calc(var(--h2-size) * .65);
+    font-size: var(--h2-size);
     width: calc(100% - 150px);
     line-height: 1.25;
     margin-bottom: 1em;
@@ -503,7 +503,6 @@ h3.company-name {
     color: var(--primary-color);
     text-transform: uppercase;
     text-align: right;
-    color: #999;
     font-size: 85%;
     line-height: 2;
 }
@@ -722,11 +721,22 @@ footer.grid-container-fluid>div>p {
         height: 75px;
     }
     .experience-content {
-        grid-template-rows: .5fr 5.5fr;
+        grid-template-rows: .25fr 5.5fr;
         grid-template-columns: 100%;
+    }
+    .tabs-panel {
+        font-size: .75em;
     }
     .tabs-panel .lbl:before {
         font-size: 14px;
+    }
+    .tabs-panel .lbl {
+        margin-top: .25em;
+        margin-bottom: .25em;
+    }
+    .tab-nav {
+        padding: 0 1em;
+        font-size: .75em;
     }
     img.skill-icon {
         top: 0;
@@ -742,5 +752,16 @@ footer.grid-container-fluid>div>p {
     }
     footer ul.footer-links li a {
         padding: .5em;
+    }
+    ul.skill-list {
+        padding-top: 1em;
+    }
+    section>h2 {
+        font-size: 2em;
+        text-align: center;
+        margin: 0 0 1em;
+    }
+    h3.company-name {
+        font-size: 1.5em;
     }
 }

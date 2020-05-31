@@ -35,14 +35,14 @@
           <div class="top-bar grid-container">
             <div class="top-bar-left">
                 <ul class="menu">
-                <li class="menu-text site-title"><a title="Alexander Curtis &mdash; Web Developer &amp; Designer" href="./index.html">AC</a></li>
+                <li class="menu-text site-title"><a title="Alexander Curtis &mdash; Web Developer &amp; Designer" href="./index.html">alexander curtis</a></li>
                 </ul>
             </div>
             <div class="top-bar-right">
-                <ul class="dropdown menu" data-dropdown-menu>
+                <ul class="dropdown menu" data-dropdown-menu data-smooth-scroll data-animation-duration="750">
                 <li>
                     <a class="menu-burger" href="#"><i class="fas fa-bars"></i></a>
-                    <ul class="menu vertical">
+                    <ul class="menu vertical" data-smooth-scroll>
                     <li><a id="cv" href="#skillset">Skill Set</a></li>
                     <li><a id="ex" href="#experience">Professional Experience</a></li>
                     <li><a id="pf" href="#recent-work">Recent Work</a></li>
@@ -58,8 +58,9 @@
     
       <header class="grid-container-fluid">
         <section class="video-bg">
+          <a id="scroll-cta" href="#skillset" data-smooth-scroll data-animation-duration="750"><span></span>Scroll</a>
 			<div class="video-container">
-				<video src="./img/blurred-video.mp4" autoplay muted loop></video>
+        <video src="./img/blurred-video.mp4" autoplay muted loop></video>
 			</div>
 			<div class="content">
 				<div class="grid-container">
@@ -81,51 +82,57 @@
         <h2 id="skillset">Skill Set</h2>
         <div class="grid-x grid-margin-x">
           <div class="large-4 cell languages">
-              <h2>Development Languages</h2>
               <img class="skill-icon" src="./img/developer.png" alt="Development Languages">
+              <h2>Development Languages</h2>
                 <ul class="skill-list">
                 <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JS (ES6)</li>
-                <li>AJAX</li>
-                <li>JQuery</li>
-                <li>JSON</li>
-                <li>PHP</li>
-                <li>MySQL</li>
-                <li>Command-line interface (CLI)</li>
+                <li title="Cascading Style Sheets">CSS3</li>
+                <li>Sass</li>
+                <li title="JavaScript / ECMAScript 6+">JavaScript (ES6+)</li>
+                <li title="Asynchronous JavaScript And XML">AJAX</li>
+                <li title="JQuery JavaScript library">JQuery</li>
+                <li title="JavaScript Object Notation">JSON</li>
+                <li title="PHP: Hypertext Preprocessor">PHP</li>
+                <li title="Structured Query Language">SQL</li>
+                <li title="Command-line interface">CLI</li>
                 <li>Git</li>
-                <li>Node</li>
-                <li>Node Package Manger (NPM)</li>
-                <li>React</li>
-                <li>Express</li>
+                <li>NodeJS</li>
+                <li title="Node Package Manager">NPM</li>
+                <li>ReactJS</li>
+                <li>ExpressJS</li>
                 <li>MongoDB</li>
                 <li>Mongoose</li>
                 <li>RESTful APIs</li>
             </ul>
         </div>
           <div class="large-4 cell tools">
-              <h2>Software &amp; Tools</h2>
               <img src="./img/development-skill.png" alt="Development Tools" class="skill-icon">
+              <h2>Software &amp; Tools</h2>
               <ul class="skill-list">
                 <li>Adobe Creative Cloud</li>
-                <li>Responsive Frameworks (Bootstrap / Foundation)</li>
-                <li>VSCode</li>
+                <li>Bootstrap</li>
+                <li>Foundation</li>
+                <li title="Visual Studio Code">VSCode</li>
                 <li>Github</li>
                 <li>Bitbucket</li>
-                <li>Jira, ZenDesk, Slack, Basecamp</li>
+                <li>Jira</li>
+                <li>ZenDesk</li>
+                <li>Slack</li>
+                <li>Basecamp</li>
+                <li>Trello</li>
                 <li>MongoDB Compass</li>
                 <li>Postman</li>
                 <li>CrazyEgg</li>
                 <li>HotJar</li>
-                <li>Google Analytics, Google Tag Manager</li>
-                <li>Multivariate (A/B) Testing</li>
-                <li>Salesforce Marketing Cloud</li>
+                <li>Google Analytics</li>
+                <li>Google Tag Manager</li>
+                <li>Multivariate Testing</li>
                 <li>MailChimp</li>
               </ul>
             </div>
           <div class="large-4 cell cms">
-              <h2>Content Management Systems</h2>
               <img src="./img/web.png" alt="Content Management Systems" class="skill-icon">
+              <h2>Content Management Systems</h2>
               <ul class="skill-list">
                 <li>Wordpress</li>
                 <li>DotNetNuke</li>
@@ -372,7 +379,7 @@
   </div>
     <footer class="grid-container-fluid">
         <div class="grid-container">
-            <ul class="footer-links">
+            <ul class="footer-links" data-smooth-scroll data-animation-duration="750">
                 <li><a href="#skillset">Skill Set</a></li>
                 <li><a href="#experience">Professional Experience</a></li>
                 <li><a href="#recent-work">Recent Work</a></li>

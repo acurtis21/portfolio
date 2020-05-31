@@ -93,7 +93,10 @@
 }
 
 :root {
-    --primary-color: #77f5ff;
+    --dark-color: #1d262d;
+    --primary-color: #43dde6;
+    --secondary-color: #dfffff;
+    --tertiary-color: #f0f0f0;
     --h2-size: 1.5em;
     --h3-size: 1em;
     --section-margin: 2em 0 0 0;
@@ -158,8 +161,7 @@ nav {
 }
 
 .menu .menu-text.site-title a {
-    color: black;
-    background: #77f5ff;
+    color: white;
     text-transform: lowercase;
 }
 
@@ -285,14 +287,26 @@ section {
     position: relative;
 }
 
-section>h2 {
+#skillset, #experience, #recent-work {
     font-weight: 600;
     font-family: Montserrat-Bold, sans-serif;
     display: block;
     margin: 1em 0;
+    padding-bottom: .5em;
     text-align: left;
     font-size: 2.5em;
     line-height: 1;
+    position: relative;
+}
+
+#skillset::after, #experience::after, #recent-work::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 1em;
+    height: 3px;
+    background-color: var(--primary-color);
 }
 
 section>h3 {
@@ -312,7 +326,6 @@ section>h3 {
 .languages, .tools, .cms {
     background: white;
     position: relative;
-    margin-top: 2em;
     padding: 2em;
     background: #dfffff;
     color: black;
@@ -322,10 +335,11 @@ section>h3 {
     font-size: var(--h2-size);
     width: calc(100% - 150px);
     line-height: 1.25;
-    margin-bottom: 1em;
+    margin-bottom: 0;
     font-weight: 600;
     font-family: Montserrat-Bold, sans-serif;
-    padding-bottom: .5em;
+    padding-bottom: 1em;
+    position: relative;
 }
 
 img.skill-icon {
@@ -333,7 +347,7 @@ img.skill-icon {
     opacity: 1;
     top: .5em;
     right: 1em;
-    width: 120px;
+    width: 100px;
 }
 
 ul.skill-list {
@@ -342,7 +356,7 @@ ul.skill-list {
     -webkit-columns: 2;
     column-gap: 2em;
     font-weight: 300;
-    padding-top: 2em;
+    padding-top: 1em;
 }
 
 ul.skill-list li {
@@ -383,6 +397,7 @@ ul#experience-tabs {
     border-bottom: 1px solid #000;
     border-top: 1px solid #000;
     outline: none;
+    transition: 0.5s ease;
 }
 
 .tabs-title>a:focus, .tabs-title>a[aria-selected=true] {
@@ -488,6 +503,7 @@ p {
 
 h3.company-name {
     margin-bottom: unset;
+    font-size: 1.5em;
 }
 
 .tabs-panel .lbl {
@@ -576,7 +592,7 @@ h3.company-name {
     position: absolute;
 }
 
-.video-bg:after {
+/* .video-bg:after {
     content: '';
     background: url(./img/arrow-right.svg);
     background-repeat: no-repeat;
@@ -589,6 +605,90 @@ h3.company-name {
     height: 100px;
     position: absolute;
     bottom: 3em;
+} */
+
+.video-bg a#scroll-cta {
+    position: absolute;
+    bottom: .5em;
+    left: calc(50% - 22px);
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font: normal 500 1em/1 Montserrat-Medium, sans-serif;
+    /* letter-spacing: .1em; */
+    text-decoration: none;
+    transition: opacity .3s;
+}
+
+.video-bg a#scroll-cta:hover {
+    opacity: .5;
+}
+
+.video-bg a#scroll-cta {
+    padding-top: 4em;
+}
+
+.video-bg a#scroll-cta span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+.video-bg a#scroll-cta span::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 10px;
+    height: 10px;
+    margin-left: -5px;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-animation: scroll-down-circle 3s infinite;
+    animation: scroll-down-circle 3s infinite;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes scroll-down-circle {
+    0% {
+        -webkit-transform: translate(0, 0);
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: translate(0, 20px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes scroll-down-circle {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    80% {
+        transform: translate(0, 20px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .video-bg .content {

@@ -31,21 +31,28 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <a id="top"></a>
       <nav>
           <div class="top-bar grid-container">
             <div class="top-bar-left">
                 <ul class="menu">
-                <li class="menu-text site-title"><a title="Alexander Curtis &mdash; Web Developer &amp; Designer" href="./index.html">alexander curtis</a></li>
+                <li class="menu-text site-title"><a title="Alexander Curtis &mdash; Web Developer &amp; Designer" href="#top" data-smooth-scroll data-animation-duration="750" data-offset="80">alexander curtis</a></li>
                 </ul>
             </div>
             <div class="top-bar-right">
-                <ul class="dropdown menu" data-dropdown-menu data-smooth-scroll data-animation-duration="750">
+              <ul id="main-nav" class="menu align-right hide-for-small-only" data-smooth-scroll data-animation-duration="750" data-offset="80">
+                <li><a id="cv" href="#skillset">Skill Set</a></li>
+                    <li><a id="ex" href="#experience">Resum&eacute;</a></li>
+                    <li><a id="pf" href="#recent-work">Portfolio</a></li>
+                    <li><a id="cme" href="mailto:alex.curtis@gmail.com">Contact Me</a></li>
+              </ul>
+                <ul id="mobile-nav" class="dropdown menu show-for-small-only" data-dropdown-menu data-smooth-scroll data-animation-duration="750" data-offset="80">
                 <li>
                     <a class="menu-burger" href="#"><i class="fas fa-bars"></i></a>
                     <ul class="menu vertical" data-smooth-scroll>
                     <li><a id="cv" href="#skillset">Skill Set</a></li>
-                    <li><a id="ex" href="#experience">Professional Experience</a></li>
-                    <li><a id="pf" href="#recent-work">Recent Work</a></li>
+                    <li><a id="ex" href="#experience">Resum&eacute;</a></li>
+                    <li><a id="pf" href="#recent-work">Portfolio</a></li>
                     <li><a id="cme" href="mailto:alex.curtis@gmail.com">Contact Me</a></li>
                     </ul>
                 </li>
@@ -58,7 +65,7 @@
     
       <header class="grid-container-fluid">
         <section class="video-bg">
-          <a id="scroll-cta" href="#skillset" data-smooth-scroll data-animation-duration="750"><span></span>Scroll</a>
+          <a id="scroll-cta" href="#skillset" data-smooth-scroll data-animation-duration="750" data-offset="80"><span></span>Scroll</a>
 			<div class="video-container">
         <video src="./img/blurred-video.mp4" autoplay muted loop></video>
 			</div>
@@ -66,8 +73,10 @@
 				<div class="grid-container">
                     <div class="grid-x grid-margin-x">
                       <div class="large-12 cell info">
-                        <h1>I will help you realize your vision and meet your goals on the web.<br>
-                        <span>Visual Designer &amp; Front-End Developer</span></h1>
+                        <h1>
+                          <span>Surpass your goals.</span>
+                        </h1>
+                        <h2>Visual Designer &amp; Front-End Developer</h2>
                       </div>
 
                       </div>
@@ -148,7 +157,7 @@
         </div>
       </section>
       <section class="experience">
-          <h2 id="experience">Professional Experience</h2>
+          <h2 id="experience">Resum&eacute;</h2>
         <div class="grid-x">
             <div class="cell medium-4 hide-for-small-only">
               <ul class="vertical tabs" data-tabs id="experience-tabs">
@@ -320,7 +329,7 @@
           </div>
       </section>
       <section class="portfolio">
-          <h2 id="recent-work">Recent Work</h2>
+          <h2 id="recent-work">Portfolio</h2>
           <div class="port">
           <ul class="port-list">
             <li>
@@ -379,10 +388,10 @@
   </div>
     <footer class="grid-container-fluid">
         <div class="grid-container">
-            <ul class="footer-links" data-smooth-scroll data-animation-duration="750">
+            <ul class="footer-links" data-smooth-scroll data-animation-duration="750" data-offset="80">
                 <li><a href="#skillset">Skill Set</a></li>
-                <li><a href="#experience">Professional Experience</a></li>
-                <li><a href="#recent-work">Recent Work</a></li>
+                <li><a href="#experience">Resum&eacute;</a></li>
+                <li><a href="#recent-work">Portfolio</a></li>
                 <li><a href="mailto:alex.curtis@gmail.com">Contact Me</a></li>
                 
             </ul>
@@ -393,10 +402,11 @@
     
     
     <script>
-        let tabs = 'li.tabs-title';
-        let activeTab = `${tabs}.is-active`;
-        let last = $(tabs).length - 1;
+      let tabs = 'li.tabs-title';
+      let activeTab = `${tabs}.is-active`;
+      let last = $(tabs).length - 1;
 
+      $(document).ready(function(){
         $("#previous-btn").on("click", function(){
             event.preventDefault();
             
@@ -417,8 +427,11 @@
                 $(activeTab).next().click();
             }
         });
-
-      $(document).foundation();
+        // $(".menu-burger").click(function(event){
+        //   event.preventDefault();
+        // });
+        $(document).foundation();
+      });
     </script>
 
   </body>

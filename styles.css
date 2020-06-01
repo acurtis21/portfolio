@@ -106,15 +106,6 @@ body {
     background-color: #eeeeee;
 }
 
-:target::before, #skillset::before, #experience::before, #recent-work::before {
-    content: "";
-    display: block;
-    height: 100px;
-    /* fixed header height*/
-    margin: -80px 0 0;
-    /* negative fixed header height */
-}
-
 /* Navigation */
 
 .dropdown.menu>li.is-dropdown-submenu-parent>a::after {
@@ -142,7 +133,26 @@ nav {
 }
 
 nav {
-    background: rgba(0, 0, 0, 1);
+    background: rgb(17, 22, 26);
+}
+
+#main-nav li>a {
+    color: white;
+    padding: 2em 1.5em;
+    min-height: min-content;
+}
+
+#main-nav li>a#cme {
+    color: var(--primary-color);
+}
+
+#main-nav li>a:hover {
+    background-color: var(--dark-color);
+}
+
+#main-nav li>a#cme:hover {
+    /* background-color: white;
+    color: black; */
 }
 
 .menu .menu-text {
@@ -168,30 +178,44 @@ nav {
 .dropdown.menu>li.is-dropdown-submenu-parent>a.menu-burger {
     color: white;
     padding-right: unset;
+    padding: 0;
+    font-size: 1.25em;
+    box-sizing: initial;
+}
+
+.dropdown.menu>li.is-dropdown-submenu-parent>a.menu-burger>svg {
     padding: 1em;
-    font-size: 22px;
+    width: 1em;
 }
 
 /* Header */
 
 header .cell.info, header .cell.contact {
-    padding: 2em 3em;
+    padding: 0;
     position: relative;
 }
 
 header .cell.info {
-    /* background-color: rgba(0, 0, 0, 0.5); */
     color: white;
 }
 
 header .cell.info h1 {
     font-size: calc(25px + (49.8 - 18.48) * ((100vw - 640px) / (1920 - 640)));
     text-align: left;
+    line-height: 1;
+    font-size: 6em;
+    font-family: Montserrat-Bold;
 }
 
 header .cell.info h1>span {
-    font-size: 45%;
+    font-family: Montserrat-Bold, sans-serif;
+}
+
+header .cell.info h2 {
+    font-size: 1.5em;
     color: var(--primary-color);
+    text-align: left;
+    margin-top: 1em;
 }
 
 header .cell.info em {
@@ -241,7 +265,7 @@ header .arrow-right:after {
 ul.menu.vertical.submenu.is-dropdown-submenu.first-sub {
     width: 100%;
     z-index: 9999;
-    background: black;
+    background: #11161a;
     right: 0;
 }
 
@@ -250,7 +274,7 @@ li.is-submenu-item.is-dropdown-submenu-item>a {
     font-size: var(--h3-size);
     padding: 1.5em;
     line-height: 1.5;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #1d262d;
 }
 
 li.is-submenu-item.is-dropdown-submenu-item:last-child>a {
@@ -276,10 +300,6 @@ li.is-submenu-item.is-dropdown-submenu-item>a:hover {
     width: 100%;
     background: white;
     position: relative;
-}
-
-section>h2, section>h3 {
-    text-align: center;
 }
 
 section {
@@ -327,27 +347,32 @@ section>h3 {
     background: white;
     position: relative;
     padding: 2em;
-    background: #dfffff;
+    background: var(--tertiary-color);
     color: black;
+    margin-top: 1em;
 }
 
 .languages h2, .tools h2, .cms h2 {
     font-size: var(--h2-size);
-    width: calc(100% - 150px);
+    width: calc(100% - 100px);
     line-height: 1.25;
     margin-bottom: 0;
     font-weight: 600;
     font-family: Montserrat-Bold, sans-serif;
     padding-bottom: 1em;
     position: relative;
+    margin: 0;
 }
 
 img.skill-icon {
     position: absolute;
     opacity: 1;
-    top: .5em;
-    right: 1em;
-    width: 100px;
+    top: -3em;
+    right: 0;
+    width: 120px;
+    border-radius: 0 0 0 2em;
+    padding: .5em;
+    opacity: 1;
 }
 
 ul.skill-list {
@@ -356,18 +381,17 @@ ul.skill-list {
     -webkit-columns: 2;
     column-gap: 2em;
     font-weight: 300;
-    padding-top: 1em;
 }
 
 ul.skill-list li {
     line-height: 1.25;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
 }
 
 /* Experience */
 
 .experience .grid-x {
-    background-color: #222222;
+    background-color: var(--dark-color);
     margin-top: 2em;
 }
 
@@ -380,12 +404,12 @@ ul#experience-tabs li h2 {
 }
 
 ul#experience-tabs {
-    background-color: #000000;
+    background-color: #161d22;
     border: none;
 }
 
 ul#experience-tabs {
-    background-color: #000000;
+    background-color: #161d22;
     min-height: 700px;
 }
 
@@ -394,28 +418,28 @@ ul#experience-tabs {
     font-size: 1em;
     color: white;
     font-weight: 300;
-    border-bottom: 1px solid #000;
-    border-top: 1px solid #000;
+    border-bottom: 1px solid #161d22;
+    border-top: 1px solid #161d22;
     outline: none;
     transition: 0.5s ease;
 }
 
 .tabs-title>a:focus, .tabs-title>a[aria-selected=true] {
-    background: #222;
+    background: #1d262d;
     color: white;
-    border-color: #222;
+    border-color: #1d262d;
 }
 
 .tabs-title>a:hover {
-    background: black;
+    background: #161d22;
     color: white;
-    border-color: #333;
+    border-color: #1d262d;
 }
 
 .tabs-title.is-active>a:hover {
-    background-color: #222;
+    background-color: #1d262d;
     color: white;
-    border-color: #222;
+    border-color: #1d262d;
 }
 
 .tabs-content, .tabs-content.vertical {
@@ -426,8 +450,8 @@ ul#experience-tabs {
 
 .tab-nav {
     padding: 1em 1.5em;
-    background: #111111;
-    color: #666666;
+    background: #11161a;
+    color: #33434f;
 }
 
 .tab-nav a {
@@ -436,6 +460,10 @@ ul#experience-tabs {
     font-weight: 300;
     line-height: 3em;
     margin: 0 .5em;
+}
+
+.tab-nav a:hover {
+    border-bottom: 1px solid;
 }
 
 .tabs-title a.note:after {
@@ -461,7 +489,7 @@ p {
 .note-txt {
     color: #9b9b9b;
     padding: 1em 1.5em;
-    background: #000;
+    background: #161d22;
     font-size: 85%;
     line-height: 3em;
 }
@@ -474,7 +502,7 @@ p {
 }
 
 .download-links {
-    border-top: 2px solid #111111;
+    border-top: 2px solid #161d22;
     color: white;
     text-align: right;
 }
@@ -553,7 +581,6 @@ h3.company-name {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     color: white;
     padding: 0 20px;
     margin: inherit;
@@ -588,7 +615,7 @@ h3.company-name {
     width: 100%;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(17, 22, 26, .5);
     position: absolute;
 }
 
@@ -652,8 +679,8 @@ h3.company-name {
     margin-left: -5px;
     background-color: #fff;
     border-radius: 100%;
-    -webkit-animation: scroll-down-circle 3s infinite;
-    animation: scroll-down-circle 3s infinite;
+    -webkit-animation: scroll-down-circle 2s infinite;
+    animation: scroll-down-circle 2s infinite;
     box-sizing: border-box;
 }
 
@@ -765,7 +792,7 @@ div.port {
 
 footer.grid-container-fluid {
     display: block;
-    background: black;
+    background: #11161a;
     position: relative;
 }
 
@@ -800,9 +827,37 @@ footer.grid-container-fluid>div>p {
 }
 
 @media screen and (max-width: 64em) {
+    :target::before, #skillset::before, #experience::before, #recent-work::before {
+        content: "";
+        display: block;
+        height: 60px;
+        margin: -60px 0 0;
+    }
+    .menu .menu-text.site-title a {
+        font-size: 0.8em;
+    }
     header .cell.info h1 {
         font-size: 1.5em;
-        text-align: center;
+        text-align: left;
+    }
+    header .cell.info h1>span {
+        font-size: 1.5em;
+        margin-bottom: .3em;
+        display: block;
+    }
+    header .cell.info h2 {
+        font-size: .8em;
+        text-align: left;
+    }
+    .video-bg a#scroll-cta span {
+        width: 30px;
+        height: 50px;
+        border-radius: 5px;
+    }
+    .video-bg a#scroll-cta span::before {
+        -webkit-animation: scroll-down-circle 2s infinite;
+        animation: scroll-down-circle 2s infinite;
+        animation-direction: reverse;
     }
     .grid-container.main {
         padding: 0 1em;
@@ -830,6 +885,12 @@ footer.grid-container-fluid>div>p {
     .experience-content {
         grid-template-rows: .25fr 5.5fr;
         grid-template-columns: 100%;
+    }
+    .experience p, .experience a {
+        font-size: 1.2em;
+    }
+    ul.skill-list li {
+        font-size: .9em;
     }
     .tabs-panel {
         font-size: .75em;
@@ -863,10 +924,8 @@ footer.grid-container-fluid>div>p {
     ul.skill-list {
         padding-top: 1em;
     }
-    section>h2 {
+    #skillset, #experience, #recent-work {
         font-size: 2em;
-        text-align: center;
-        margin: 0 0 1em;
     }
     h3.company-name {
         font-size: 1.5em;
@@ -886,5 +945,8 @@ footer.grid-container-fluid>div>p {
     }
     header .cell.info, header .cell.contact {
         padding: 0;
+    }
+    .port>.port-list>li>figure>.port-txt>h3 {
+        font-size: 1.25em;
     }
 }

@@ -93,6 +93,7 @@
 }
 
 :root {
+    --darker-color: #11161a;
     --dark-color: #1d262d;
     --primary-color: #43dde6;
     --secondary-color: #dfffff;
@@ -100,6 +101,13 @@
     --h2-size: 1.5em;
     --h3-size: 1em;
     --section-margin: 2em 0 0 0;
+}
+
+:target::before, #skillset::before, #experience::before, #recent-work::before {
+    content: "";
+    display: block;
+    height: 80px;
+    margin: -80px 0 0;
 }
 
 body {
@@ -148,11 +156,6 @@ nav {
 
 #main-nav li>a:hover {
     background-color: var(--dark-color);
-}
-
-#main-nav li>a#cme:hover {
-    /* background-color: white;
-    color: black; */
 }
 
 .menu .menu-text {
@@ -267,7 +270,7 @@ header .arrow-right:after {
 ul.menu.vertical.submenu.is-dropdown-submenu.first-sub {
     width: 100%;
     z-index: 9999;
-    background: #11161a;
+    background: var(--darker-color);
     right: 0;
 }
 
@@ -350,6 +353,7 @@ section {
     padding: var(--section-margin);
     position: relative;
     background: white;
+    padding: 3em 0;
 }
 
 #skillset, #experience, #recent-work {
@@ -372,6 +376,14 @@ section {
     width: 1em;
     height: 3px;
     background-color: var(--primary-color);
+}
+
+section.experience {
+    background: #161d22;
+}
+
+section.experience h2 {
+    color: white;
 }
 
 section>h3 {
@@ -433,7 +445,7 @@ ul.skill-list li {
 /* Experience */
 
 .experience .grid-x {
-    background-color: var(--dark-color);
+    background-color: var(--darker-color);
     margin-top: 2em;
 }
 
@@ -460,28 +472,23 @@ ul#experience-tabs {
     font-size: 1em;
     color: white;
     font-weight: 300;
-    border-bottom: 1px solid #161d22;
-    border-top: 1px solid #161d22;
     outline: none;
     transition: 0.5s ease;
 }
 
 .tabs-title>a:focus, .tabs-title>a[aria-selected=true] {
-    background: #1d262d;
+    background: var(--darker-color);
     color: white;
-    border-color: #1d262d;
 }
 
 .tabs-title>a:hover {
-    background: #161d22;
+    background: var(--dark-color);
     color: white;
-    border-color: #1d262d;
 }
 
 .tabs-title.is-active>a:hover {
-    background-color: #1d262d;
+    background-color: var(--darker-color);
     color: white;
-    border-color: #1d262d;
 }
 
 .tabs-content, .tabs-content.vertical {
@@ -492,7 +499,7 @@ ul#experience-tabs {
 
 .tab-nav {
     padding: 1em 1.5em;
-    background: #11161a;
+    background: var(--darker-color);
     color: #33434f;
 }
 
@@ -819,7 +826,7 @@ div.port {
 
 footer.grid-container-fluid {
     display: block;
-    background: #11161a;
+    background: var(--darker-color);
     position: relative;
 }
 

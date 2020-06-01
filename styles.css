@@ -296,6 +296,48 @@ li.is-submenu-item.is-dropdown-submenu-item>a:hover {
     fill: black;
 }
 
+/* Utility Nav (Mobile Only) */
+
+section.utility-nav {
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    padding: 0;
+    background-color: white;
+    max-height: 5em;
+    width: 100%;
+    border-top: 1px solid rgba(29, 38, 45, 0.13);
+}
+
+section.utility-nav a {
+    display: block;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+section.utility-nav img {
+    max-width: 2em;
+    margin: .5em 0;
+    opacity: 1;
+}
+
+section.utility-nav a span {
+    display: block;
+    font-size: .8em;
+    font-family: Montserrat-SemiBold;
+    color: black;
+    margin-bottom: .5em;
+}
+
+section.utility-nav div.small-3 {
+    border-right: 1px solid rgba(29, 38, 45, 0.13);
+}
+
+section.utility-nav div.small-3:last-child {
+    border-right: none;
+}
+
 /* Sections */
 
 .container {
@@ -307,6 +349,7 @@ li.is-submenu-item.is-dropdown-submenu-item>a:hover {
 section {
     padding: var(--section-margin);
     position: relative;
+    background: white;
 }
 
 #skillset, #experience, #recent-work {

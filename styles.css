@@ -95,6 +95,7 @@
 :root {
     --darker-color: #11161a;
     --dark-color: #1d262d;
+    --medium-color: #202a31;
     --primary-color: #43dde6;
     --secondary-color: #dfffff;
     --tertiary-color: #f0f0f0;
@@ -379,7 +380,7 @@ section {
 }
 
 section.experience {
-    background: #161d22;
+    background: var(--medium-color);
 }
 
 section.experience h2 {
@@ -458,12 +459,12 @@ ul#experience-tabs li h2 {
 }
 
 ul#experience-tabs {
-    background-color: #161d22;
+    background-color: var(--medium-color);
     border: none;
 }
 
 ul#experience-tabs {
-    background-color: #161d22;
+    background-color: var(--medium-color);
     min-height: 700px;
 }
 
@@ -538,7 +539,7 @@ p {
 .note-txt {
     color: #9b9b9b;
     padding: 1em 1.5em;
-    background: #161d22;
+    background: var(--medium-color);
     font-size: 85%;
     line-height: 3em;
 }
@@ -551,7 +552,7 @@ p {
 }
 
 .download-links {
-    border-top: 2px solid #161d22;
+    border-top: 2px solid var(--medium-color);
     color: white;
     text-align: right;
 }

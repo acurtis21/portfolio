@@ -94,8 +94,8 @@
 
 :root {
     --darker-color: #11161a;
-    --dark-color: #1d262d;
-    --medium-color: #202a31;
+    --dark-color: #161d22;
+    --medium-color: #1d262d;
     --primary-color: #43dde6;
     --secondary-color: #dfffff;
     --tertiary-color: #f0f0f0;
@@ -783,7 +783,7 @@ div.port {
 
 .port>.port-list>li>figure {
     height: 100%;
-    background: #dfffff;
+    background: var(--tertiary-color);
     background-size: cover;
     display: flex;
     justify-content: center;

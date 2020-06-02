@@ -462,7 +462,15 @@
               <h2 id="contact">Contact Me</h2>
             </div>
           <div class="small-12 medium-6 cell grid-x grid-padding-x">
-            
+            <div class="reason-contact small-12 medium-12 cell">
+              <fieldset class="large-12 cell">
+                <legend>Reason for contacting <span>(Choose One)</span></legend>
+                <input type="radio" name="why-contact" value="General Inquiry" id="general-inquiry" checked required>
+                <label for="general-inquiry">General Inquiry</label><br/>
+                <input type="radio" name="why-contact" value="Work with me" id="business-inquiry">
+                <label for="business-inquiry">Work with me</label>
+              </fieldset>
+            </div>
           <div class="small-12 medium-6 cell">
             <label>First Name
               <input type="text" id="fname" name="fname" pattern="[a-zA-Z0-9]+" minlength="4" maxlength="10" required>
@@ -481,12 +489,12 @@
           </div>
           <div class="small-12 medium-6 cell">
             <label class="optional">Phone Number
-              <input type="text" id="phone" name="phone" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$">
+              <input type="text" id="phone" name="phone" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" required>
               <span class="form-example">(XXX) XXX-XXXX</span>
             </label>
           </div>
           <div class="medium-12 cell">
-            <label class="optional">Message
+            <label class="optional">Message <span>(Optional)</span>
               <textarea name="message" id="message" cols="30" rows="8"></textarea>
             </label>
           </div>

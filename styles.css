@@ -104,7 +104,7 @@
     --section-margin: 2em 0 0 0;
 }
 
-:target::before, #skillset::before, #experience::before, #recent-work::before {
+:target::before, #skillset::before, #experience::before, #recent-work::before, #contact::before {
     content: "";
     display: block;
     height: 80px;
@@ -305,7 +305,7 @@ li.is-submenu-item.is-dropdown-submenu-item>a:hover {
 section.utility-nav {
     position: fixed;
     bottom: 0;
-    z-index: 9999;
+    z-index: 999999;
     padding: 0;
     background-color: white;
     max-height: 5em;
@@ -354,14 +354,14 @@ section {
     padding: var(--section-margin);
     position: relative;
     background: white;
-    padding: 3em 0;
+    padding: 5em 0;
 }
 
-#skillset, #experience, #recent-work {
+#skillset, #experience, #recent-work, #contact {
     font-weight: 600;
     font-family: Montserrat-Bold, sans-serif;
     display: block;
-    margin: 1em 0;
+    margin: 0 0 1em;
     padding-bottom: .5em;
     text-align: left;
     font-size: 2.5em;
@@ -369,7 +369,7 @@ section {
     position: relative;
 }
 
-#skillset::after, #experience::after, #recent-work::after {
+#skillset::after, #experience::after, #recent-work::after, #contact::after {
     content: '';
     position: absolute;
     left: 0;
@@ -465,7 +465,7 @@ ul#experience-tabs {
 
 ul#experience-tabs {
     background-color: var(--medium-color);
-    min-height: 700px;
+    min-height: 500px;
 }
 
 .tabs-title>a {
@@ -525,7 +525,7 @@ ul#experience-tabs {
 }
 
 .tabs-panel {
-    padding: 2em;
+    padding: 0 2em;
 }
 
 p.lbl.dates {
@@ -759,8 +759,8 @@ h3.company-name {
 
 /* Portfolio */
 
-section.portfolio {
-    padding-bottom: 2em;
+section.skillset, section.experience, section.portfolio, section.contact {
+    padding-bottom: 5em;
 }
 
 div.port {
@@ -823,6 +823,71 @@ div.port {
     filter: inherit;
 }
 
+/* Contact Form */
+
+section.contact-form {
+    position: relative;
+    background-color: var(--tertiary-color);
+}
+
+section.contact-form form {
+    z-index: 99999;
+    position: relative;
+}
+
+.side-contact {
+    text-align: center
+}
+
+.side-contact img {
+    max-width: 10em;
+    margin-bottom: 2em;
+    opacity: .15;
+}
+
+.side-contact p {
+    line-height: 1;
+    margin-bottom: .3em;
+}
+
+.side-contact p a {
+    font-size: 2em;
+    color: var(--medium-color);
+}
+
+section.contact-form::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/email.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    opacity: .025;
+}
+
+input#fname, input#lname {
+    text-transform: capitalize;
+}
+
+input#phone, input#email {
+    margin: 0;
+}
+
+label>span.form-example {
+    font-size: .9em;
+    color: #9ea3a7;
+    margin-bottom: 1em;
+    display: block;
+}
+
+button#send-message {
+    width: 100%;
+    padding: .8em;
+    font-size: 1.25em;
+    background-color: var(--primary-color);
+}
+
 /* Footer */
 
 footer.grid-container-fluid {
@@ -862,7 +927,7 @@ footer.grid-container-fluid>div>p {
 }
 
 @media screen and (max-width: 64em) {
-    :target::before, #skillset::before, #experience::before, #recent-work::before {
+    :target::before, #skillset::before, #experience::before, #recent-work::before, #contact::before {
         content: "";
         display: block;
         height: 60px;
@@ -944,7 +1009,7 @@ footer.grid-container-fluid>div>p {
         margin-bottom: .25em;
     }
     .tab-nav {
-        padding: 0 1em;
+        padding: 0;
         font-size: .75em;
     }
     img.skill-icon {
@@ -987,11 +1052,27 @@ footer.grid-container-fluid>div>p {
     .port>.port-list>li>figure>.port-txt>h3 {
         font-size: 1.25em;
     }
+    section.contact-form::before {
+        content: none;
+    }
     footer.grid-container-fluid {
         padding-bottom: 4em;
     }
     footer ul.footer-links li a {
         padding: .5em;
         font-size: 1em;
+    }
+    .experience .grid-x {
+        background-color: var(--medium-color);
+    }
+    .tabs-panel {
+        padding: 0;
+    }
+    .tab-nav {
+        background: var(--medium-color);
+        margin-bottom: 1em;
+    }
+    section>.grid-container {
+        padding: 0 1.25em;
     }
 }

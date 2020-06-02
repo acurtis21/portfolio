@@ -10,6 +10,7 @@
     <meta name="description" content="Web Developer &amp; Designer">
     <title>Alexander Curtis | Web Developer and Designer</title>
     <link rel='shortcut icon' type='image/x-icon' href='./favicon.ico' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"
       integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
@@ -21,6 +22,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha256-Kg2zTcFO9LXOc7IwcBx1YeUBJmekycsnTsq2RuFHSZU=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
     <link
       rel="stylesheet"
@@ -47,7 +49,7 @@
                 <li><a id="cv" href="#skillset">Skill Set</a></li>
                     <li><a id="ex" href="#experience">Resum&eacute;</a></li>
                     <li><a id="pf" href="#recent-work">Portfolio</a></li>
-                    <li><a id="cme" href="mailto:alex.curtis@gmail.com">Contact Me</a></li>
+                    <li><a id="cme" href="#contact">Contact Me</a></li>
               </ul>
               <!-- Mobile Nav -->
                 <ul id="mobile-nav" class="dropdown menu show-for-small-only" data-dropdown-menu data-smooth-scroll data-animation-duration="750" >
@@ -57,7 +59,7 @@
                     <li><a id="cv" href="#skillset">Skill Set</a></li>
                     <li><a id="ex" href="#experience">Resum&eacute;</a></li>
                     <li><a id="pf" href="#recent-work">Portfolio</a></li>
-                    <li><a id="cme" href="mailto:alex.curtis@gmail.com">Contact Me</a></li>
+                    <li><a id="cme" href="#contact">Contact Me</a></li>
                     </ul>
                 </li>
                 </ul>
@@ -119,7 +121,7 @@
       </a>
     </div>
     <div class="small-3 medium-3 large-3 cell">
-      <a href="mailto:alex.curtis@gmail.com">
+      <a href="#contact">
         <img src="./img/blue_email.png" alt="" srcset="">
         <span>Contact</span>
       </a>
@@ -132,8 +134,8 @@
       
       
       
-        <!-- Resume Section -->
-        <section class="curriculum-vitae">
+        <!-- Skillset Section -->
+        <section class="skillset">
           <div class="grid-container">
         <h2 id="skillset">Skill Set</h2>
         <div class="grid-x grid-margin-x">
@@ -450,7 +452,64 @@
         </div>
       </section>
 
-
+      <!-- Contact Form -->
+<section class="contact-form">
+  <div class="grid-container">
+    <form action="POST" data-netlify="true">
+      <div class="grid-container">
+        <div class="grid-x grid-padding-x">
+          <div class="small-12 cell">
+              <h2 id="contact">Contact Me</h2>
+            </div>
+          <div class="small-12 medium-6 cell grid-x grid-padding-x">
+            
+          <div class="small-12 medium-6 cell">
+            <label>First Name
+              <input type="text" id="fname" name="fname" pattern="[a-zA-Z0-9]+" minlength="4" maxlength="10" required>
+            </label>
+          </div>
+          <div class="small-12 medium-6 cell">
+            <label>Last Name
+              <input type="text" id="lname" name="lname" pattern="[a-zA-Z0-9]+" minlength="4" maxlength="10" required>
+            </label>
+          </div>
+          <div class="small-12 medium-6 cell">
+            <label>E-mail Address
+              <input type="email" id="email" name="email" pattern="	
+              /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+              <span class="form-example">email@email.com</span>
+            </label>
+          </div>
+          <div class="small-12 medium-6 cell">
+            <label class="optional">Phone Number
+              <input type="text" id="phone" name="phone" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$">
+              <span class="form-example">(XXX) XXX-XXXX</span>
+            </label>
+          </div>
+          <div class="medium-12 cell">
+            <label class="optional">Message
+              <textarea name="message" id="message" cols="30" rows="8"></textarea>
+            </label>
+          </div>
+          <div class="medium-12 cell">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
+          <div class="medium-12 cell">
+            <button id="send-message" name="send-message" type="submit">send the message</button>
+          </div>
+        </div>
+        <div class="medium-1  hide-for-small-only cell">
+          <div class="side-contact">
+          <p><a href="https://www.linkedin.com/in/alexanderwcurtis/" target="_blank" title="View LinkedIn Profile"><i class="fab fa-linkedin"></i></a></p>
+          <p><a href="https://github.com/acurtis21" target="_blank" title="View Github Profile"><i class="fab fa-github-square"></i></a></p>
+          </div>
+          
+        </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
 
       <!-- Footer -->
     <footer class="grid-container-fluid">
@@ -459,7 +518,7 @@
                 <li><a href="#skillset">Skill Set</a></li>
                 <li><a href="#experience">Resum&eacute;</a></li>
                 <li><a href="#recent-work">Portfolio</a></li>
-                <li><a href="mailto:alex.curtis@gmail.com">Contact Me</a></li>
+                <li><a href="#contact">Contact Me</a></li>
                 
             </ul>
             <p>&copy; 2020 Alexander Curtis. All rights reserved.</p>
@@ -474,6 +533,7 @@
       let last = $(tabs).length - 1;
 
       $(document).ready(function(){
+        // Cycle through resume tabs
         $("#previous-btn").on("click", function(){
             event.preventDefault();
             
@@ -494,9 +554,10 @@
                 $(activeTab).next().click();
             }
         });
-        // $(".menu-burger").click(function(event){
-        //   event.preventDefault();
-        // });
+        // Mask Form Fields
+        $('#phone').mask('(000) 000-0000');
+  
+
         $(document).foundation();
       });
     </script>

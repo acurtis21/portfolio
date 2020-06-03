@@ -643,7 +643,7 @@ h3.company-name {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: black url('./img/blurred-video-backup.png') no-repeat center center/cover;
+    background: black url('./img/blurred-video-backup.jpg') no-repeat center center/cover;
 }
 
 .video-bg .video-container video {
@@ -866,6 +866,10 @@ section.contact-form input[type=text]:focus, section.contact-form input[type=ema
     box-shadow: inset 2px 2px 2px 0px rgba(17, 22, 26, .15);
 }
 
+section.contact-form textarea[name=message] {
+    margin-bottom: 1.5em;
+}
+
 section.contact-form::before {
     content: '';
     position: absolute;
@@ -881,10 +885,6 @@ section.contact-form::before {
     border-bottom: 2px solid rgba(17, 22, 26, .1);
     padding-bottom: .5em;
     margin-bottom: 1em;
-}
-
-input#fname, input#lname {
-    text-transform: capitalize;
 }
 
 input#phone, input#email {
@@ -904,6 +904,7 @@ button#send-message {
     margin-top: 1em;
     font-size: 1.25em;
     background-color: var(--primary-color);
+    cursor: pointer;
 }
 
 /* Footer */

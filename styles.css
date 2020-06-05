@@ -750,6 +750,65 @@ div.port {
 
 /* Contact Form */
 
+section.contact-form [type="radio"]:checked, section.contact-form [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+section.contact-form [type="radio"]:checked+label, section.contact-form [type="radio"]:not(:checked)+label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #000;
+}
+
+section.contact-form [type="radio"]:not(:checked)+label {
+    opacity: .35;
+}
+
+section.contact-form [type="radio"]:checked+label:before, section.contact-form [type="radio"]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background: #fff;
+}
+
+section.contact-form [type="radio"]:checked+label:after, section.contact-form [type="radio"]:not(:checked)+label:after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #000000;
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    border-radius: 50%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+section.contact-form [type="radio"]:not(:checked)+label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+section.contact-form [type="radio"]:checked+label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+section.contact-form .reason-contact {
+    padding-bottom: 1em;
+}
+
 section.contact-form {
     position: relative;
     background-color: var(--tertiary-color);

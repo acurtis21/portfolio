@@ -466,9 +466,13 @@
               <fieldset class="large-12 cell">
                 <legend>Reason for contacting <span>(Choose One)</span></legend>
                 <input type="radio" name="why-contact" value="General Inquiry" id="general-inquiry" checked required>
-                <label for="general-inquiry">General Inquiry</label><br/>
+                <label for="general-inquiry">
+                  General Inquiry
+                </label><br/>
                 <input type="radio" name="why-contact" value="Work with me" id="business-inquiry">
-                <label for="business-inquiry">Work with me</label>
+                <label for="business-inquiry">
+                  Work with me
+                </label>
               </fieldset>
             </div>
           <div class="small-12 medium-6 cell">
@@ -528,18 +532,20 @@
                 <li><a href="#contact">Contact Me</a></li>
                 
             </ul>
-            <p>&copy; 2020 Alexander Curtis. All rights reserved.</p>
+            <p>&copy; <span id="current-year"></span> Alexander Curtis. All rights reserved.</p>
         </div>
     </header>
     
     
     
     <script>
+      let currentYear = (new Date()).getFullYear();
       let tabs = 'li.tabs-title';
       let activeTab = `${tabs}.is-active`;
       let last = $(tabs).length - 1;
 
       $(document).ready(function(){
+        $("#current-year")[0].innerHTML = currentYear;
         // Cycle through resume tabs
         $("#previous-btn").on("click", function(){
             event.preventDefault();

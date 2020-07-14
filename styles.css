@@ -13,7 +13,19 @@
     src: url(./fonts/Montserrat-Bold.ttf);
 }
 
-*, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+*,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: Montserrat-Medium, sans-serif;
 }
 
@@ -29,7 +41,11 @@
     --section-margin: 2em 0 0 0;
 }
 
-:target::before, #skillset::before, #experience::before, #recent-work::before, #contact::before {
+:target::before,
+#skillset::before,
+#experience::before,
+#recent-work::before,
+#contact::before {
     content: "";
     display: block;
     height: 80px;
@@ -46,7 +62,8 @@ body {
     display: none;
 }
 
-.top-bar .top-bar-left, .top-bar .top-bar-right {
+.top-bar .top-bar-left,
+.top-bar .top-bar-right {
     -webkit-box-flex: initial;
     -webkit-flex: initial;
     -ms-flex: initial;
@@ -54,7 +71,9 @@ body {
     max-width: initial;
 }
 
-nav, .top-bar, .top-bar ul {
+nav,
+.top-bar,
+.top-bar ul {
     background: unset;
     color: white;
     padding: unset;
@@ -119,7 +138,8 @@ nav {
 
 /* Header */
 
-header .cell.info, header .cell.contact {
+header .cell.info,
+header .cell.contact {
     padding: 0;
     position: relative;
 }
@@ -282,7 +302,10 @@ section {
     padding: 5em 0;
 }
 
-#skillset, #experience, #recent-work, #contact {
+#skillset,
+#experience,
+#recent-work,
+#contact {
     font-weight: 600;
     font-family: Montserrat-Bold, sans-serif;
     display: block;
@@ -294,7 +317,10 @@ section {
     position: relative;
 }
 
-#skillset::after, #experience::after, #recent-work::after, #contact::after {
+#skillset::after,
+#experience::after,
+#recent-work::after,
+#contact::after {
     content: '';
     position: absolute;
     left: 0;
@@ -326,18 +352,24 @@ section>h3 {
     overflow: hidden;
 }
 
-.languages, .tools, .cms {
+.languages,
+.tools,
+.cms {
     background: white;
     position: relative;
     padding: 2em;
-    background: var(--tertiary-color);
+
     color: black;
     margin-top: 1em;
+    padding-left: 0;
+    padding-top: 0;
 }
 
-.languages h2, .tools h2, .cms h2 {
+.languages h2,
+.tools h2,
+.cms h2 {
     font-size: var(--h2-size);
-    width: calc(100% - 100px);
+    /*     width: calc(100% - 100px); */
     line-height: 1.25;
     margin-bottom: 0;
     font-weight: 600;
@@ -348,24 +380,31 @@ section>h3 {
 }
 
 img.skill-icon {
-    position: absolute;
+    position: relative;
     opacity: 1;
-    top: -3em;
-    right: 0;
-    width: 120px;
+    width: 100px;
+    margin-top: -2em;
+    margin-left: -.4em;
 }
 
 ul.skill-list {
     font-size: 1em;
-    columns: 2;
-    -webkit-columns: 2;
-    column-gap: 2em;
     font-weight: 300;
+    margin: 0;
+    position: relative;
 }
 
 ul.skill-list li {
     line-height: 1.25;
-    margin-bottom: .5em;
+    display: inline-block;
+    padding: .25em .75em;
+    background: var(--primary-color);
+    margin: .25em;
+    float: left;
+    background: #efeff0;
+    border: none;
+    color: #404f5a;
+    white-space: nowrap;
 }
 
 /* Experience */
@@ -402,7 +441,8 @@ ul#experience-tabs {
     transition: 0.5s ease;
 }
 
-.tabs-title>a:focus, .tabs-title>a[aria-selected=true] {
+.tabs-title>a:focus,
+.tabs-title>a[aria-selected=true] {
     background: var(--darker-color);
     color: white;
 }
@@ -417,7 +457,8 @@ ul#experience-tabs {
     color: white;
 }
 
-.tabs-content, .tabs-content.vertical {
+.tabs-content,
+.tabs-content.vertical {
     background: none;
     border: none;
     color: white;
@@ -501,7 +542,7 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: .5fr 5.5fr .5fr;
-    grid-template-areas: "." "." ".";
+    grid-template-areas: ".""."".";
 }
 
 h3.company-name {
@@ -649,13 +690,16 @@ h3.company-name {
         -webkit-transform: translate(0, 0);
         opacity: 0;
     }
+
     40% {
         opacity: 1;
     }
+
     80% {
         -webkit-transform: translate(0, 20px);
         opacity: 0;
     }
+
     100% {
         opacity: 0;
     }
@@ -666,13 +710,16 @@ h3.company-name {
         transform: translate(0, 0);
         opacity: 0;
     }
+
     40% {
         opacity: 1;
     }
+
     80% {
         transform: translate(0, 20px);
         opacity: 0;
     }
+
     100% {
         opacity: 0;
     }
@@ -684,7 +731,10 @@ h3.company-name {
 
 /* Portfolio */
 
-section.skillset, section.experience, section.portfolio, section.contact {
+section.skillset,
+section.experience,
+section.portfolio,
+section.contact {
     padding-bottom: 5em;
 }
 
@@ -750,12 +800,14 @@ div.port {
 
 /* Contact Form */
 
-section.contact-form [type="radio"]:checked, section.contact-form [type="radio"]:not(:checked) {
+section.contact-form [type="radio"]:checked,
+section.contact-form [type="radio"]:not(:checked) {
     position: absolute;
     left: -9999px;
 }
 
-section.contact-form [type="radio"]:checked+label, section.contact-form [type="radio"]:not(:checked)+label {
+section.contact-form [type="radio"]:checked+label,
+section.contact-form [type="radio"]:not(:checked)+label {
     position: relative;
     padding-left: 28px;
     cursor: pointer;
@@ -768,7 +820,8 @@ section.contact-form [type="radio"]:not(:checked)+label {
     opacity: .35;
 }
 
-section.contact-form [type="radio"]:checked+label:before, section.contact-form [type="radio"]:not(:checked)+label:before {
+section.contact-form [type="radio"]:checked+label:before,
+section.contact-form [type="radio"]:not(:checked)+label:before {
     content: '';
     position: absolute;
     left: 0;
@@ -780,7 +833,8 @@ section.contact-form [type="radio"]:checked+label:before, section.contact-form [
     background: #fff;
 }
 
-section.contact-form [type="radio"]:checked+label:after, section.contact-form [type="radio"]:not(:checked)+label:after {
+section.contact-form [type="radio"]:checked+label:after,
+section.contact-form [type="radio"]:not(:checked)+label:after {
     content: '';
     width: 6px;
     height: 6px;
@@ -839,13 +893,17 @@ section.contact-form form {
     color: var(--medium-color);
 }
 
-section.contact-form input[type=text], section.contact-form input[type=email], section.contact-form textarea {
+section.contact-form input[type=text],
+section.contact-form input[type=email],
+section.contact-form textarea {
     border: 1px solid #ddd;
     border-color: white;
     box-shadow: none;
 }
 
-section.contact-form input[type=text]:focus, section.contact-form input[type=email]:focus, section.contact-form textarea:focus {
+section.contact-form input[type=text]:focus,
+section.contact-form input[type=email]:focus,
+section.contact-form textarea:focus {
     border-color: var(--darker-color);
     box-shadow: inset 2px 2px 2px 0px rgba(17, 22, 26, .15);
 }
@@ -871,7 +929,8 @@ section.contact-form::before {
     margin-bottom: 1em;
 }
 
-input#phone, input#email {
+input#phone,
+input#email {
     margin: 0;
 }
 
@@ -930,50 +989,66 @@ footer.grid-container-fluid>div>p {
 }
 
 @media screen and (max-width: 64em) {
-    :target::before, #skillset::before, #experience::before, #recent-work::before, #contact::before {
+
+    :target::before,
+    #skillset::before,
+    #experience::before,
+    #recent-work::before,
+    #contact::before {
         content: "";
         display: block;
         height: 60px;
         margin: -60px 0 0;
     }
+
     .video-bg {
         height: calc(100vh - 74px);
     }
+
     .menu .menu-text.site-title a {
         font-size: 0.8em;
     }
+
     header .cell.info h1 {
         font-size: 12vw;
         text-align: left;
     }
+
     header .cell.info h1>span {
         font-size: 100%;
         margin-bottom: .3em;
         display: block;
     }
+
     header .cell.info h2 {
         font-size: 3.5vw;
         text-align: left;
     }
+
     .video-bg a#scroll-cta {
         transform: translate(0, -20%);
     }
+
     .video-bg a#scroll-cta span {
         width: 30px;
         height: 50px;
         border-radius: 5px;
     }
+
     .video-bg a#scroll-cta span::before {
         -webkit-animation: scroll-down-circle 2s infinite;
         animation: scroll-down-circle 2s infinite;
         animation-direction: reverse;
     }
+
     .grid-container.main {
         padding: 0 1em;
     }
+
     .tabs-panel .lbl {
         padding-left: 0;
     }
+
     .tabs-panel .lbl:before {
         position: relative;
         left: 0;
@@ -983,98 +1058,134 @@ footer.grid-container-fluid>div>p {
         text-align: left;
         margin-right: 10px;
     }
-    .languages, .tools, .cms {
+
+    .languages,
+    .tools,
+    .cms {
         padding: 1.5em;
         margin: .5em 1em;
     }
+
     .video-bg:after {
         width: 75px;
         height: 75px;
     }
+
     .experience-content {
         grid-template-rows: .25fr 5.5fr;
         grid-template-columns: 100%;
     }
-    .experience p, .experience a {
+
+    .experience p,
+    .experience a {
         font-size: 1.2em;
     }
+
     ul.skill-list li {
         font-size: .9em;
     }
+
     .tabs-panel {
         font-size: .75em;
     }
+
     .tabs-panel .lbl:before {
         font-size: 14px;
     }
+
     .tabs-panel .lbl {
         margin-top: .25em;
         margin-bottom: .25em;
     }
+
     .tab-nav {
         padding: 0;
         font-size: .75em;
     }
+
     img.skill-icon {
         top: 0;
         right: 0;
         width: 90px;
     }
+
     .port>.port-list {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         grid-gap: 1rem;
     }
+
     footer ul.footer-links li {
         display: block;
     }
+
     ul.skill-list {
         padding-top: 1em;
     }
-    #skillset, #experience, #recent-work {
+
+    #skillset,
+    #experience,
+    #recent-work {
         font-size: 2em;
     }
+
     h3.company-name {
         font-size: 1.5em;
     }
+
     .tabs-title>a {
         font-size: .75em;
         padding: 1em 2em;
     }
+
     ul#experience-tabs {
         min-height: 500px;
     }
+
     ul#experience-tabs li h2 {
         line-height: 1em;
     }
-    .languages h2, .tools h2, .cms h2 {
+
+    .languages h2,
+    .tools h2,
+    .cms h2 {
         font-size: 1.25em;
     }
-    header .cell.info, header .cell.contact {
+
+    header .cell.info,
+    header .cell.contact {
         padding: 0;
     }
+
     .port>.port-list>li>figure>.port-txt>h3 {
         font-size: 1.25em;
     }
+
     section.contact-form::before {
         content: none;
     }
+
     footer.grid-container-fluid {
         padding-bottom: 4em;
     }
+
     footer ul.footer-links li a {
         padding: .5em;
         font-size: 1em;
     }
+
     .experience .grid-x {
         background-color: var(--medium-color);
     }
+
     .tabs-panel {
         padding: 0;
     }
+
     .tab-nav {
         background: var(--medium-color);
         margin-bottom: 1em;
     }
+
     section>.grid-container {
         padding: 0 1.25em;
     }

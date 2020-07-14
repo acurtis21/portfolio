@@ -1,579 +1,621 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta property="og:title" content="Alexander Curtis">
-    <meta name="author" content="Alexander Curtis">
-    <meta property="og:locale" content="en_US">
-    <meta name="description" content="Web Developer &amp; Designer">
-    <title>Alexander Curtis | Visual Designer &amp; Front-End Developer</title>
-    <link rel='shortcut icon' type='image/x-icon' href='./favicon.ico' />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"
-      integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.0/js/foundation.min.js"
-      integrity="sha256-/PFxCnsMh+nTuM0k3VJCRch1gwnCfKjaP8rJNq5SoBg="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha256-Kg2zTcFO9LXOc7IwcBx1YeUBJmekycsnTsq2RuFHSZU=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.0/css/foundation.min.css"
-      integrity="sha256-xpOKVlYXzQ3P03j397+jWFZLMBXLES3IiryeClgU5og="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <a id="top"></a>
 
-    <!-- Navigation -->
-      <nav>
-          <div class="top-bar grid-container">
-            <div class="top-bar-left">
-                <ul class="menu">
-                <li class="menu-text site-title"><a title="Alexander Curtis &mdash; Web Developer &amp; Designer" href="#top" data-smooth-scroll data-animation-duration="750" >alexander curtis</a></li>
-                </ul>
-            </div>
-            <!-- Desktop Nav -->
-            <div class="top-bar-right">
-              <ul id="main-nav" class="menu align-right hide-for-small-only" data-smooth-scroll data-animation-duration="750" >
-                <li><a id="cv" href="#skillset">Skill Set</a></li>
-                    <li><a id="ex" href="#experience">Resum&eacute;</a></li>
-                    <li><a id="pf" href="#recent-work">Portfolio</a></li>
-                    <li><a id="cme" href="#contact">Contact Me</a></li>
-              </ul>
-              <!-- Mobile Nav -->
-                <ul id="mobile-nav" class="dropdown menu show-for-small-only" data-dropdown-menu data-smooth-scroll data-animation-duration="750" >
-                <li>
-                    <a class="menu-burger" href="#"><i class="fas fa-bars"></i></a>
-                    <ul class="menu vertical" data-smooth-scroll>
-                    <li><a id="cv" href="#skillset">Skill Set</a></li>
-                    <li><a id="ex" href="#experience">Resum&eacute;</a></li>
-                    <li><a id="pf" href="#recent-work">Portfolio</a></li>
-                    <li><a id="cme" href="#contact">Contact Me</a></li>
-                    </ul>
-                </li>
-                </ul>
-            </div>
-        </div>
-      </nav>
-    
-    </div>
-    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta property="og:title" content="Alexander Curtis">
+  <meta name="author" content="Alexander Curtis">
+  <meta property="og:locale" content="en_US">
+  <meta name="description" content="Web Developer &amp; Designer">
+  <title>Alexander Curtis | Visual Designer &amp; Front-End Developer</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38641957-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-    
-    <!-- Header Section -->
-      <header class="grid-container-fluid">
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-        <section class="video-bg">
-          <a id="scroll-cta" href="#skillset" data-smooth-scroll data-animation-duration="750" ><span></span>Scroll</a>
-			<div class="video-container">
-        <video src="./img/blurred-video.mp4" autoplay muted loop></video>
-			</div>
-			<div class="content">
-				<div class="grid-container">
-                    <div class="grid-x grid-margin-x">
-                      <div class="large-12 cell info">
-                        <h1>
-                          <span>Surpass your goals.</span>
-                        </h1>
-                        <h2>Visual Designer &amp; Front-End Developer</h2>
-                      </div>
+    gtag('config', 'UA-38641957-1');
+  </script>
 
-                      </div>
-			</div>
-		</section>
-        
-        </div>
-      </header>
+  <link rel='shortcut icon' type='image/x-icon' href='./favicon.ico' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"
+    integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.0/js/foundation.min.js"
+    integrity="sha256-/PFxCnsMh+nTuM0k3VJCRch1gwnCfKjaP8rJNq5SoBg=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+    integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+    integrity="sha256-Kg2zTcFO9LXOc7IwcBx1YeUBJmekycsnTsq2RuFHSZU=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.0/css/foundation.min.css"
+    integrity="sha256-xpOKVlYXzQ3P03j397+jWFZLMBXLES3IiryeClgU5og=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-      
-      
-      
-      <!-- Utility Nav -->
-<section class="utility-nav show-for-small-only" data-smooth-scroll data-animation-duration="750" >
-  <div class="grid-x">
-    <div class="small-3 medium-3 large-3 cell">
-      <a href="#skillset">
-        <img src="./img/blue_html.png" alt="" srcset="">
-        <span>Skill Set</span>
-      </a>
-    </div>
-    <div class="small-3 medium-3 large-3 cell">
-      <a href="#experience">
-        <img src="./img/blue_resume.png" alt="" srcset="">
-        <span>Resum&eacute;</span>
-      </a>
-    </div>
-    <div class="small-3 medium-3 large-3 cell">
-      <a href="#recent-work">
-        <img src="./img/blue_portfolio.png" alt="" srcset="">
-        <span>Portfolio</span>
-      </a>
-    </div>
-    <div class="small-3 medium-3 large-3 cell">
-      <a href="#contact">
-        <img src="./img/blue_email.png" alt="" srcset="">
-        <span>Contact</span>
-      </a>
-    </div>
-  </div>
-  </section>
-      
-      
-      
-      
-      
-      
-        <!-- Skillset Section -->
-        <section class="skillset">
-          <div class="grid-container">
-        <h2 id="skillset">Skill Set</h2>
-        <div class="grid-x grid-margin-x">
-          <div class="large-4 cell languages">
-              <img class="skill-icon" src="./img/developer.png" alt="Development Languages">
-              <h2>Development Languages</h2>
-                <ul class="skill-list">
-                <li>HTML5</li>
-                <li title="Cascading Style Sheets">CSS3</li>
-                <li>Sass</li>
-                <li title="JavaScript / ECMAScript 6+">JavaScript (ES6+)</li>
-                <li title="Asynchronous JavaScript And XML">AJAX</li>
-                <li title="JQuery JavaScript library">JQuery</li>
-                <li title="JavaScript Object Notation">JSON</li>
-                <li title="PHP: Hypertext Preprocessor">PHP</li>
-                <li title="Structured Query Language">SQL</li>
-                <li title="Command-line interface">CLI</li>
-                <li>Git</li>
-                <li>NodeJS</li>
-                <li title="Node Package Manager">NPM</li>
-                <li>ReactJS</li>
-                <li>ExpressJS</li>
-                <li>MongoDB</li>
-                <li>Mongoose</li>
-                <li>RESTful APIs</li>
+<body>
+  <a id="top"></a>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="top-bar grid-container">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text site-title"><a title="Alexander Curtis &mdash; Web Developer &amp; Designer" href="#top"
+              data-smooth-scroll data-animation-duration="750">alexander curtis</a></li>
+        </ul>
+      </div>
+      <!-- Desktop Nav -->
+      <div class="top-bar-right">
+        <ul id="main-nav" class="menu align-right hide-for-small-only" data-smooth-scroll data-animation-duration="750">
+          <li><a id="cv" href="#skillset">Skill Set</a></li>
+          <li><a id="ex" href="#experience">Resum&eacute;</a></li>
+          <li><a id="pf" href="#recent-work">Portfolio</a></li>
+          <li><a id="cme" href="#contact">Contact Me</a></li>
+        </ul>
+        <!-- Mobile Nav -->
+        <ul id="mobile-nav" class="dropdown menu show-for-small-only" data-dropdown-menu data-smooth-scroll
+          data-animation-duration="750">
+          <li>
+            <a class="menu-burger" href="#"><i class="fas fa-bars"></i></a>
+            <ul class="menu vertical" data-smooth-scroll>
+              <li><a id="cv" href="#skillset">Skill Set</a></li>
+              <li><a id="ex" href="#experience">Resum&eacute;</a></li>
+              <li><a id="pf" href="#recent-work">Portfolio</a></li>
+              <li><a id="cme" href="#contact">Contact Me</a></li>
             </ul>
-        </div>
-          <div class="large-4 cell tools">
-              <img src="./img/development-skill.png" alt="Development Tools" class="skill-icon">
-              <h2>Software &amp; Tools</h2>
-              <ul class="skill-list">
-                <li>Adobe Creative Cloud</li>
-                <li>Bootstrap</li>
-                <li>Foundation</li>
-                <li title="Visual Studio Code">VSCode</li>
-                <li>Github</li>
-                <li>Bitbucket</li>
-                <li>Jira</li>
-                <li>ZenDesk</li>
-                <li>Slack</li>
-                <li>Basecamp</li>
-                <li>Trello</li>
-                <li>MongoDB Compass</li>
-                <li>Postman</li>
-                <li>CrazyEgg</li>
-                <li>HotJar</li>
-                <li>Google Analytics</li>
-                <li>Google Tag Manager</li>
-                <li>Multivariate Testing</li>
-                <li>MailChimp</li>
-              </ul>
-            </div>
-          <div class="large-4 cell cms">
-              <img src="./img/web.png" alt="Content Management Systems" class="skill-icon">
-              <h2>Content Management Systems</h2>
-              <ul class="skill-list">
-                <li>Wordpress</li>
-                <li>DotNetNuke</li>
-                <li>Craft</li>
-                <li>Simpleview</li>
-                <li>Umbraco</li>
-                <li>Mezzanine</li>
-                <li>Blackboard LMS</li>
-                <li>Drupal</li>
-                <li>Shopify</li>
-              </ul>
-            </div>
-        </div>
+          </li>
+        </ul>
       </div>
-      </section>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <!-- Experience Section -->
-      <section class="experience">
-        <div class="grid-container">
-          <h2 id="experience">Resum&eacute;</h2>
-        <div class="grid-x">
-            <div class="cell medium-4 hide-for-small-only">
-              <ul class="vertical tabs" data-tabs id="experience-tabs">
-                  <li><h2>2001 - Present</h2></li>
-                <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Houston First</a></li>
-                <li class="tabs-title"><a class="note" href="#panel2v">American College Consortium</a></li>
-                <li class="tabs-title"><a class="note" href="#panel3v">Community Health Choice</a></li>
-                <li class="tabs-title"><a class="note" href="#panel4v">KIPP Foundation</a></li>
-                <li class="tabs-title"><a href="#panel5v">Houston Chronicle</a></li>
-                <li class="tabs-title"><a class="note" href="#panel6v">Rice University</a></li>
-                <li class="tabs-title"><a class="note" href="#panel7v">City Of Houston</a></li>
-                <li class="tabs-title"><a class="note" href="#panel8v">Chevron Inc., USA</a></li>
-                <li class="tabs-title"><a class="note" href="#panel9v">Universal Weather &amp; Aviation</a></li>
-                <li class="tabs-title"><a class="note" href="#panel10v">British Petroleum</a></li>
-                <li class="tabs-title"><a href="#panel11v">HISD</a></li>
-              </ul>
-              <div class="note-txt">
-                  <em>*</em> = Consultant / Contractor
-              </div>
-            </div>
-            
-            <div class="cell medium-8 experience-content">
-                <div class="tab-nav">
-                <a id="previous-btn" href="#" >&lsaquo; Previous</a> | <a id="next-btn" href="#">Next &rsaquo;</a>
-                </div>
-              <div class="tabs-content vertical" data-tabs-content="experience-tabs">
-                <div class="tabs-panel is-active" id="panel1v">
-                    <div class="content">
-                        <h3 class="company-name">Houston First</h3>
-                  <p class="subtitle">Destination Marketing Organization for Houston, Texas</p>
-                    <p class="lbl dates">February 2015 - Present</p>
-                    <p class="lbl status">Full-Time Employee</p>
-                    <p class="lbl job-title">Web Developer</p>
-                    <div class="lbl duties">
-                        <p>Develop re-usable components and widgets for Simpleview CMS using HTML5 / CSS3 / JS / Goate e /RequireJS / SlickJS</p>
-                        <p>Design websites and mobile applications using Adobe Creative Cloud (Photoshop/Illustrator/XD)</p>
-                        <p>Develop and upkeep 12 sites using HTML5, CSS3, JavaScript, JQuery, Zurb Foundation, Google Analytics, CrazyEgg, Hotjar and Simpleview CMS, Simpleview CRM, ExactTarget, MailChimp, Sharepoint, DotNetNuke, Wordpress and Drupal.
-                        </p>
-                    </div>
-                </div>
-                    </div>
-                  
-                <div class="tabs-panel" id="panel2v">
-                  <h3 class="company-name">American College Consortium</h3>
-                  <p class="subtitle">At Amazon's HOU2 Campus</p>
-                    <p class="lbl dates">June 2019 - October 2019</p>
-                    <p class="lbl status">Consultant</p>
-                    <p class="lbl job-title">Front-End Web Development Instructor</p>
-                    <div class="lbl duties">
-                        <p>Taught Front-End Web Development curriculum to approximately 60 Amazon employees at Amazon’s HOU2 campus</p>
-                        <p>This course covered basic web concepts and web coding concepts for the student new to web development. Courses included basic web coding using HTML, an overview of CSS, and JavaScript.</p>
-                        </ul>
-                    </div>
-                </div>
-                <div class="tabs-panel" id="panel3v">
-                    <h3 class="company-name">Community Health Choice</h3>
-                      <p class="lbl dates">November 2017 - November 2018</p>
-                      <p class="lbl status">Consultant</p>
-                      <p class="lbl job-title">Sharepoint Consultant</p>
-                      <div class="lbl duties">
-                        <p>Design and develop web presence for internal and external facing sites (Sharepoint / Umbraco CMS)</p>
-                        <p>Manage Google Analytics and Google Tag Manager</p>
-                        <p>Run GA reports and provide suggestions based on KPIs</p>
-                        <p>Manage tasks and internal stakeholder requests via Basecamp online ticketing system</p>
-                      </div>
-                </div>
-                <div class="tabs-panel" id="panel4v">
-                    <h3 class="company-name">KIPP Foundation</h3>
-                      <p class="lbl dates">January 2014 - January 2015</p>
-                      <p class="lbl status">Consultant</p>
-                      <p class="lbl job-title">Senior Web Developer</p>
-                      <div class="lbl duties">
-                        <p>Developed HTML Packages using Bootstrap Framework and HTML5/CSS3/JS.</p>
-                        <p>Developed Master CSS for use sitewide</p>
-                        <p>Developed course pages in HTML/CSS using Blackboard LMS</p>
-                      </div>
-                </div>
-                <div class="tabs-panel" id="panel5v">
-                    <h3 class="company-name">Houston Chronicle</h3>
-                      <p class="lbl dates">August 2008 - January 2015</p>
-                      <p class="lbl status">Full-Time Employee</p>
-                      <p class="lbl job-title">Web Designer / Creative Coordinator </p>
-                      <div class="lbl duties">
-                        <p>Create Web Banners, Websites and Rich Media campaigns (overlays, peelbacks, sliding billboards, video) for Houston area companies including Academy Sports and Outdoors, IW Marks Jewelers, Ashley Furniture, Bel Furniture, Houston Symphony, HEB, Roomstore, Houston Rockets, Houston Astros, Methodist Hospital, Westside Chevrolet, Lee College, Macys, CapitalOne, Lakewood Church, Keller Williams Realtors, etc.</p>
-                        <p>Utilize HTML, CSS, JavaScript &amp; ActionScript extensively.</p>
-                        </div>
-                </div>
-                <div class="tabs-panel" id="panel6v">
-                    <h3 class="company-name">Rice University</h3>
-                    <p class="subtitle">Center for Technology in Teaching and Learning
-                        (CTTL)</p>
-                      <p class="lbl dates">June 2008</p>
-                      <p class="lbl status">Consultant / Contractor</p>
-                      <p class="lbl job-title">Flash Developer</p>
-                      <div class="lbl duties">
-                        <p>Worked with Center for Technology in Teaching and Learning department to create educational video games (<a target="_blank" href="http://webadventures.rice.edu/ed/About/Mission.html">Web Adventures</a>).</p>
-                        <p>Utilized Adobe Flash CS3, ActionScript &amp; PHP for development.</p>
-                        <p>Projects:</p>
-                        <ul>
-                            <li>MedMyst Series</li>
-                            <li>N-Squad and Reconstructors Series</li>
-                        </ul>
-                      </div>
-                </div>
-                <div class="tabs-panel" id="panel7v">
-                    <h3 class="company-name">City of Houston</h3>
-                    <p class="lbl dates">January 2006 - April 2006; November 2007 - April 2008</p>
-                    <p class="lbl status">Contractor</p>
-                    <p class="lbl job-title">Web Developer</p>
-                    <div class="lbl duties">
-                        <p>Developed and laid out print publications and their web counterparts for the Communication Department.</p>
-                        <p>Designed benefits enrollment booklets Win for Life Guide, SMART Guide, and HFSA Guide for new City benefits programs that were mailed to City of Houston employees, retirees and dependents.</p>
-                        <p>Created websites for City Benefits Guide, Combined Municipal Campaigns, BRAVO Award and Public Service Recognition Week.</p>
-                        <p>Interfaced with other departments to design marketing materials for City sponsored programs (posters, flyers, logos, websites).</p>
-                    </div>
-                  </div>
-                  <div class="tabs-panel" id="panel8v">
-                    <h3 class="company-name">Chevron Inc., USA</h3>
-                    <p class="lbl dates">September 2006 - May 2007</p>
-                    <p class="lbl status">Contractor</p>
-                    <p class="lbl job-title">Web Developer</p>
-                    <div class="lbl duties">
-                        <p>Developed Intranet sites and maintained web sites for Chevron's CBRES GIDC department.</p>
-                        <p>Validated, proofread and debugged sites as team member.</p>
-                        <p>Interfaced with internal clients including Angola LNG, and CBRES to develop intranet sites.</p>
-                        <p>Utilized JavaScript development and Tableless CSS Template design for internal clients.</p>
-                    </div>
-                  </div>
-                  <div class="tabs-panel" id="panel9v">
-                    <h3 class="company-name">Universal Weather &amp; Aviation</h3>
-                    <p class="lbl dates">July 2006 - September 2006</p>
-                    <p class="lbl status">Consultant / Contractor</p>
-                    <p class="lbl job-title">Web Developer</p>
-                    <div class="lbl duties">
-                        <p>Developed intranet web sites and designed email campaign with Tableless CSS design/XHTML.</p>
-                        <p>Developed forms and interactive site elements with JavaScript.</p>
-                        <p>Substituted for the Lead Web Developer while on leave for a business engagement.</p>
-                    </div>
-                  </div>
-                  <div class="tabs-panel" id="panel10v">
-                    <h3 class="company-name">British Petroleum</h3>
-                    <p class="lbl dates">June 2006</p>
-                    <p class="lbl status">Contractor</p>
-                    <p class="lbl job-title">Web Designer (Sharepoint)</p>
-                    <div class="lbl duties">
-                        <p>>Designed and developed aesthetics and infrastructure of intranet website for Marine Exploration department.</p>
-                        <p>Hand-coded HTML, XHTML and JavaScript and used XML, JavaScript, and ASP for SharePoint integration.</p>
-                        <p>Developed SharePoint infrastructure to enhance intranet portal and provide tools for cross-team collaboration.</p>
-                        <p>Designed graphic interface using Photoshop 6.0, FrontPage 2003, XML, XSL and CSS.</p>
-                    </div>
-                  </div>
-                  <div class="tabs-panel" id="panel11v">
-                    <h3 class="company-name">Houston Independent School District</h3>
-                    <p class="lbl dates">September 2001 - May 2003</p>
-                    <p class="lbl status">Internship / Part-Time Employee</p>
-                    <p class="lbl job-title">Technology Intern / Web Designer</p>
-                    <div class="lbl duties">
-                        <p>Selected by HISD to develop web sites/systems under paid internship through Technology Co-Op program at Westbury Senior High School; developed into a full-time position while attending University of Houston.</p>
-                        <p>Created graphics for various offline and online publications using Adobe Photoshop/Illustrator and Fireworks.</p>
-                        <p>Migrated applications from FrontPage 98 to Dreamweaver; from Dreamweaver to Vignette Content Management System.</p>
-                        <p>Collaborated with multiple outside departments to define requirements for websites.</p>
-                    </div>
-                  </div>
-              </div>
-              <div class="download-links hide-for-small-only">
-                  <a target="_blank" class="pdf-link" href="./docs/Alexander_Curtis-Resume.pdf"><img src="./img/pdf.png" alt=""> Download .PDF</a>
-              </div>
-            </div>
-          </div>
-          </div>
-      </section>
-      
+    </div>
+  </nav>
 
-      <!-- Portfolio Section -->
-      <section class="portfolio">
+  </div>
+
+
+
+  <!-- Header Section -->
+  <header class="grid-container-fluid">
+
+    <section class="video-bg">
+      <a id="scroll-cta" href="#skillset" data-smooth-scroll data-animation-duration="750"><span></span>Scroll</a>
+      <div class="video-container">
+        <video src="./img/blurred-video.mp4" autoplay muted loop></video>
+      </div>
+      <div class="content">
         <div class="grid-container">
-          <h2 id="recent-work">Portfolio</h2>
-          <div class="port">
-          <ul class="port-list">
-            <li>
-              <figure>
-                  <a target="_blank" href="https://www.avenidahouston.com/" class="port-txt">
-                      <h3>Avenida Houston</h3>
-                      <img src="./img/arrow-right.svg" alt="Click Here to View Site" class="arrow">
-                  </a>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                  <a target="_blank" href="https://www.visithoustontexas.com/theater/" class="port-txt">
-                      <h3>Houston Theater District</h3>
-                      <img src="./img/arrow-right.svg" alt="Click Here to View Site" class="arrow">
-                  </a>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                  <a target="_blank" href="https://www.visithoustontexas.com/ar/" class="port-txt">
-                      <h3>Visit Houston Augmented Reality Application</h3>
-                      <img src="./img/arrow-right.svg" alt="Click Here to View Site" class="arrow">
-                  </a>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                  <a target="_blank" href="https://map.houstonfirst.com/event/main-visit-houston-map/?embed=1&category=hotels&category=restaurants&category=nightlife&category=shopping&region=downtown" class="port-txt">
-                      <h3>Visit Houston Map Application</h3>
-                      <img src="./img/arrow-right.svg" alt="Click Here to View Site" class="arrow">
-                  </a>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                  <a target="_blank" href="https://www.holahouston.com/" class="port-txt">
-                      <h3>Hola Houston</h3>
-                      <img src="./img/arrow-right.svg" alt="Click Here to View Site" class="arrow">
-                  </a>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                  <a target="_blank" href="https://www.houstonfirst.com/" class="port-txt">
-                      <h3>Houston First Corporation</h3>
-                      <img src="./img/arrow-right.svg" alt="Click Here to View Site" class="arrow">
-                  </a>
-              </figure>
-            </li>
+          <div class="grid-x grid-margin-x">
+            <div class="large-12 cell info">
+              <h1>
+                <span>Surpass your goals.</span>
+              </h1>
+              <h2>Visual Designer &amp; Front-End Developer</h2>
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+    </div>
+  </header>
+
+
+
+
+  <!-- Utility Nav -->
+  <section class="utility-nav show-for-small-only" data-smooth-scroll data-animation-duration="750">
+    <div class="grid-x">
+      <div class="small-3 medium-3 large-3 cell">
+        <a href="#skillset">
+          <img src="./img/blue_html.png" alt="" srcset="">
+          <span>Skill Set</span>
+        </a>
+      </div>
+      <div class="small-3 medium-3 large-3 cell">
+        <a href="#experience">
+          <img src="./img/blue_resume.png" alt="" srcset="">
+          <span>Resum&eacute;</span>
+        </a>
+      </div>
+      <div class="small-3 medium-3 large-3 cell">
+        <a href="#recent-work">
+          <img src="./img/blue_portfolio.png" alt="" srcset="">
+          <span>Portfolio</span>
+        </a>
+      </div>
+      <div class="small-3 medium-3 large-3 cell">
+        <a href="#contact">
+          <img src="./img/blue_email.png" alt="" srcset="">
+          <span>Contact</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- Skillset Section -->
+  <section class="skillset">
+    <div class="grid-container">
+      <h2 id="skillset">Skill Set</h2>
+      <div class="grid-x grid-margin-x">
+        <div class="large-4 cell languages">
+          <img class="skill-icon" src="./img/developer.png" alt="Development Languages">
+          <h2>Development Languages</h2>
+          <ul class="skill-list">
+            <li>HTML5</li>
+            <li title="Cascading Style Sheets">CSS3</li>
+            <li>Sass</li>
+            <li title="JavaScript / ECMAScript 6+">JavaScript (ES6+)</li>
+            <li title="Asynchronous JavaScript And XML">AJAX</li>
+            <li title="JQuery JavaScript library">JQuery</li>
+            <li title="JavaScript Object Notation">JSON</li>
+            <li title="PHP: Hypertext Preprocessor">PHP</li>
+            <li title="Structured Query Language">SQL</li>
+            <li title="Command-line interface">CLI</li>
+            <li>Git</li>
+            <li>NodeJS</li>
+            <li title="Node Package Manager">NPM</li>
+            <li>ReactJS</li>
+            <li>ExpressJS</li>
+            <li>MongoDB</li>
+            <li>Mongoose</li>
+            <li>RESTful APIs</li>
           </ul>
-      </div>
         </div>
-      </section>
+        <div class="large-4 cell tools">
+          <img src="./img/development-skill.png" alt="Development Tools" class="skill-icon">
+          <h2>Software &amp; Tools</h2>
+          <ul class="skill-list">
+            <li>Adobe Creative Cloud</li>
+            <li>Bootstrap</li>
+            <li>Foundation</li>
+            <li title="Visual Studio Code">VSCode</li>
+            <li>Github</li>
+            <li>Bitbucket</li>
+            <li>Jira</li>
+            <li>ZenDesk</li>
+            <li>Slack</li>
+            <li>Basecamp</li>
+            <li>Trello</li>
+            <li>MongoDB Compass</li>
+            <li>Postman</li>
+            <li>CrazyEgg</li>
+            <li>HotJar</li>
+            <li>Google Analytics</li>
+            <li>Google Tag Manager</li>
+            <li>Multivariate Testing</li>
+            <li>MailChimp</li>
+          </ul>
+        </div>
+        <div class="large-4 cell cms">
+          <img src="./img/web.png" alt="Content Management Systems" class="skill-icon">
+          <h2>Content Management Systems</h2>
+          <ul class="skill-list">
+            <li>Wordpress</li>
+            <li>DotNetNuke</li>
+            <li>Craft</li>
+            <li>Simpleview</li>
+            <li>Umbraco</li>
+            <li>Mezzanine</li>
+            <li>Blackboard LMS</li>
+            <li>Drupal</li>
+            <li>Shopify</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <!-- Contact Form -->
-<section class="contact-form">
-  <div class="grid-container">
-    <form action="POST" data-netlify="true">
-      <div class="grid-container">
-        <div class="grid-x grid-padding-x">
-          <div class="small-12 cell">
+
+
+
+
+
+
+
+
+
+  <!-- Experience Section -->
+  <section class="experience">
+    <div class="grid-container">
+      <h2 id="experience">Resum&eacute;</h2>
+      <div class="grid-x">
+        <div class="cell medium-4 hide-for-small-only">
+          <ul class="vertical tabs" data-tabs id="experience-tabs">
+            <li>
+              <h2>2001 - Present</h2>
+            </li>
+            <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Houston First</a></li>
+            <li class="tabs-title"><a class="note" href="#panel2v">American College Consortium</a></li>
+            <li class="tabs-title"><a class="note" href="#panel3v">Community Health Choice</a></li>
+            <li class="tabs-title"><a class="note" href="#panel4v">KIPP Foundation</a></li>
+            <li class="tabs-title"><a href="#panel5v">Houston Chronicle</a></li>
+            <li class="tabs-title"><a class="note" href="#panel6v">Rice University</a></li>
+            <li class="tabs-title"><a class="note" href="#panel7v">City Of Houston</a></li>
+            <li class="tabs-title"><a class="note" href="#panel8v">Chevron Inc., USA</a></li>
+            <li class="tabs-title"><a class="note" href="#panel9v">Universal Weather &amp; Aviation</a></li>
+            <li class="tabs-title"><a class="note" href="#panel10v">British Petroleum</a></li>
+            <li class="tabs-title"><a href="#panel11v">HISD</a></li>
+          </ul>
+          <div class="note-txt">
+            <em>*</em> = Consultant / Contractor
+          </div>
+        </div>
+
+        <div class="cell medium-8 experience-content">
+          <div class="tab-nav">
+            <a id="previous-btn" href="#">&lsaquo; Previous</a> | <a id="next-btn" href="#">Next &rsaquo;</a>
+          </div>
+          <div class="tabs-content vertical" data-tabs-content="experience-tabs">
+            <div class="tabs-panel is-active" id="panel1v">
+              <div class="content">
+                <h3 class="company-name">Houston First</h3>
+                <p class="subtitle">Destination Marketing Organization for Houston, Texas</p>
+                <p class="lbl dates">February 2015 - Present</p>
+                <p class="lbl status">Full-Time Employee</p>
+                <p class="lbl job-title">Web Developer</p>
+                <div class="lbl duties">
+                  <p>Develop re-usable components and widgets for Simpleview CMS using HTML5 / CSS3 / JS / Goate e
+                    /RequireJS / SlickJS</p>
+                  <p>Design websites and mobile applications using Adobe Creative Cloud (Photoshop/Illustrator/XD)</p>
+                  <p>Develop and upkeep 12 sites using HTML5, CSS3, JavaScript, JQuery, Zurb Foundation, Google
+                    Analytics, CrazyEgg, Hotjar and Simpleview CMS, Simpleview CRM, ExactTarget, MailChimp, Sharepoint,
+                    DotNetNuke, Wordpress and Drupal.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tabs-panel" id="panel2v">
+              <h3 class="company-name">American College Consortium</h3>
+              <p class="subtitle">At Amazon's HOU2 Campus</p>
+              <p class="lbl dates">June 2019 - October 2019</p>
+              <p class="lbl status">Consultant</p>
+              <p class="lbl job-title">Front-End Web Development Instructor</p>
+              <div class="lbl duties">
+                <p>Taught Front-End Web Development curriculum to approximately 60 Amazon employees at Amazon’s HOU2
+                  campus</p>
+                <p>This course covered basic web concepts and web coding concepts for the student new to web
+                  development. Courses included basic web coding using HTML, an overview of CSS, and JavaScript.</p>
+                </ul>
+              </div>
+            </div>
+            <div class="tabs-panel" id="panel3v">
+              <h3 class="company-name">Community Health Choice</h3>
+              <p class="lbl dates">November 2017 - November 2018</p>
+              <p class="lbl status">Consultant</p>
+              <p class="lbl job-title">Sharepoint Consultant</p>
+              <div class="lbl duties">
+                <p>Design and develop web presence for internal and external facing sites (Sharepoint / Umbraco CMS)</p>
+                <p>Manage Google Analytics and Google Tag Manager</p>
+                <p>Run GA reports and provide suggestions based on KPIs</p>
+                <p>Manage tasks and internal stakeholder requests via Basecamp online ticketing system</p>
+              </div>
+            </div>
+            <div class="tabs-panel" id="panel4v">
+              <h3 class="company-name">KIPP Foundation</h3>
+              <p class="lbl dates">January 2014 - January 2015</p>
+              <p class="lbl status">Consultant</p>
+              <p class="lbl job-title">Senior Web Developer</p>
+              <div class="lbl duties">
+                <p>Developed HTML Packages using Bootstrap Framework and HTML5/CSS3/JS.</p>
+                <p>Developed Master CSS for use sitewide</p>
+                <p>Developed course pages in HTML/CSS using Blackboard LMS</p>
+              </div>
+            </div>
+            <div class="tabs-panel" id="panel5v">
+              <h3 class="company-name">Houston Chronicle</h3>
+              <p class="lbl dates">August 2008 - January 2015</p>
+              <p class="lbl status">Full-Time Employee</p>
+              <p class="lbl job-title">Web Designer / Creative Coordinator </p>
+              <div class="lbl duties">
+                <p>Create Web Banners, Websites and Rich Media campaigns (overlays, peelbacks, sliding billboards,
+                  video) for Houston area companies including Academy Sports and Outdoors, IW Marks Jewelers, Ashley
+                  Furniture, Bel Furniture, Houston Symphony, HEB, Roomstore, Houston Rockets, Houston Astros, Methodist
+                  Hospital, Westside Chevrolet, Lee College, Macys, CapitalOne, Lakewood Church, Keller Williams
+                  Realtors, etc.</p>
+                <p>Utilize HTML, CSS, JavaScript &amp; ActionScript extensively.</p>
+              </div>
+            </div>
+            <div class="tabs-panel" id="panel6v">
+              <h3 class="company-name">Rice University</h3>
+              <p class="subtitle">Center for Technology in Teaching and Learning
+                (CTTL)</p>
+              <p class="lbl dates">June 2008</p>
+              <p class="lbl status">Consultant / Contractor</p>
+              <p class="lbl job-title">Flash Developer</p>
+              <div class="lbl duties">
+                <p>Worked with Center for Technology in Teaching and Learning department to create educational video
+                  games (<a target="_blank" href="http://webadventures.rice.edu/ed/About/Mission.html">Web
+                    Adventures</a>).</p>
+                <p>Utilized Adobe Flash CS3, ActionScript &amp; PHP for development.</p>
+                <p>Projects:</p>
+                <ul>
+                  <li>MedMyst Series</li>
+                  <li>N-Squad and Reconstructors Series</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tabs-panel" id="panel7v">
+              <h3 class="company-name">City of Houston</h3>
+              <p class="lbl dates">January 2006 - April 2006; November 2007 - April 2008</p>
+              <p class="lbl status">Contractor</p>
+              <p class="lbl job-title">Web Developer</p>
+              <div class="lbl duties">
+                <p>Developed and laid out print publications and their web counterparts for the Communication
+                  Department.</p>
+                <p>Designed benefits enrollment booklets Win for Life Guide, SMART Guide, and HFSA Guide for new City
+                  benefits programs that were mailed to City of Houston employees, retirees and dependents.</p>
+                <p>Created websites for City Benefits Guide, Combined Municipal Campaigns, BRAVO Award and Public
+                  Service Recognition Week.</p>
+                <p>Interfaced with other departments to design marketing materials for City sponsored programs (posters,
+                  flyers, logos, websites).</p>
+              </div>
+            </div>
+            <div class="tabs-panel" id="panel8v">
+              <h3 class="company-name">Chevron Inc., USA</h3>
+              <p class="lbl dates">September 2006 - May 2007</p>
+              <p class="lbl status">Contractor</p>
+              <p class="lbl job-title">Web Developer</p>
+              <div class="lbl duties">
+                <p>Developed Intranet sites and maintained web sites for Chevron's CBRES GIDC department.</p>
+                <p>Validated, proofread and debugged sites as team member.</p>
+                <p>Interfaced with internal clients including Angola LNG, and CBRES to develop intranet sites.</p>
+                <p>Utilized JavaScript development and Tableless CSS Template design for internal clients.</p>
+              </div>
+            </div>
+            <div class="tabs-panel" id="panel9v">
+              <h3 class="company-name">Universal Weather &amp; Aviation</h3>
+              <p class="lbl dates">July 2006 - September 2006</p>
+              <p class="lbl status">Consultant / Contractor</p>
+              <p class="lbl job-title">Web Developer</p>
+              <div class="lbl duties">
+                <p>Developed intranet web sites and designed email campaign with Tableless CSS design/XHTML.</p>
+                <p>Developed forms and interactive site elements with JavaScript.</p>
+                <p>Substituted for the Lead Web Developer while on leave for a business engagement.</p>
+              </div>
+            </div>
+            <div class="tabs-panel" id="panel10v">
+              <h3 class="company-name">British Petroleum</h3>
+              <p class="lbl dates">June 2006</p>
+              <p class="lbl status">Contractor</p>
+              <p class="lbl job-title">Web Designer (Sharepoint)</p>
+              <div class="lbl duties">
+                <p>>Designed and developed aesthetics and infrastructure of intranet website for Marine Exploration
+                  department.</p>
+                <p>Hand-coded HTML, XHTML and JavaScript and used XML, JavaScript, and ASP for SharePoint integration.
+                </p>
+                <p>Developed SharePoint infrastructure to enhance intranet portal and provide tools for cross-team
+                  collaboration.</p>
+                <p>Designed graphic interface using Photoshop 6.0, FrontPage 2003, XML, XSL and CSS.</p>
+              </div>
+            </div>
+            <div class="tabs-panel" id="panel11v">
+              <h3 class="company-name">Houston Independent School District</h3>
+              <p class="lbl dates">September 2001 - May 2003</p>
+              <p class="lbl status">Internship / Part-Time Employee</p>
+              <p class="lbl job-title">Technology Intern / Web Designer</p>
+              <div class="lbl duties">
+                <p>Selected by HISD to develop web sites/systems under paid internship through Technology Co-Op program
+                  at Westbury Senior High School; developed into a full-time position while attending University of
+                  Houston.</p>
+                <p>Created graphics for various offline and online publications using Adobe Photoshop/Illustrator and
+                  Fireworks.</p>
+                <p>Migrated applications from FrontPage 98 to Dreamweaver; from Dreamweaver to Vignette Content
+                  Management System.</p>
+                <p>Collaborated with multiple outside departments to define requirements for websites.</p>
+              </div>
+            </div>
+          </div>
+          <div class="download-links hide-for-small-only">
+            <a target="_blank" class="pdf-link" href="./docs/Alexander_Curtis-Resume.pdf"><img src="./img/pdf.png"
+                alt=""> Download .PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Portfolio Section -->
+  <section class="portfolio">
+    <div class="grid-container">
+      <h2 id="recent-work">Portfolio</h2>
+      <div class="port">
+        <ul class="port-list">
+          <li>
+            <figure>
+              <a target="_blank" href="https://www.avenidahouston.com/" class="port-txt">
+                <h3>Avenida Houston</h3>
+                <img src="./img/arrow-right.svg" alt="Click Here to View Site" class="arrow">
+              </a>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a target="_blank" href="https://www.visithoustontexas.com/theater/" class="port-txt">
+                <h3>Houston Theater District</h3>
+                <img src="./img/arrow-right.svg" alt="Click Here to View Site" class="arrow">
+              </a>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a target="_blank" href="https://www.visithoustontexas.com/ar/" class="port-txt">
+                <h3>Visit Houston Augmented Reality Application</h3>
+                <img src="./img/arrow-right.svg" alt="Click Here to View Site" class="arrow">
+              </a>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a target="_blank"
+                href="https://map.houstonfirst.com/event/main-visit-houston-map/?embed=1&category=hotels&category=restaurants&category=nightlife&category=shopping&region=downtown"
+                class="port-txt">
+                <h3>Visit Houston Map Application</h3>
+                <img src="./img/arrow-right.svg" alt="Click Here to View Site" class="arrow">
+              </a>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a target="_blank" href="https://www.holahouston.com/" class="port-txt">
+                <h3>Hola Houston</h3>
+                <img src="./img/arrow-right.svg" alt="Click Here to View Site" class="arrow">
+              </a>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a target="_blank" href="https://www.houstonfirst.com/" class="port-txt">
+                <h3>Houston First Corporation</h3>
+                <img src="./img/arrow-right.svg" alt="Click Here to View Site" class="arrow">
+              </a>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact-form">
+    <div class="grid-container">
+      <form action="POST" data-netlify="true">
+        <div class="grid-container">
+          <div class="grid-x grid-padding-x">
+            <div class="small-12 cell">
               <h2 id="contact">Contact Me</h2>
             </div>
-          <div class="small-12 medium-6 cell grid-x grid-padding-x">
-            <div class="reason-contact small-12 medium-12 cell">
-              <fieldset class="large-12 cell">
-                <legend>Reason for contacting <span>(Choose One)</span></legend>
-                <input type="radio" name="why-contact" value="General Inquiry" id="general-inquiry" checked required>
-                <label for="general-inquiry">
-                  General Inquiry
-                </label><br/>
-                <input type="radio" name="why-contact" value="Work with me" id="business-inquiry">
-                <label for="business-inquiry">
-                  Work with me
+            <div class="small-12 medium-6 cell grid-x grid-padding-x">
+              <div class="reason-contact small-12 medium-12 cell">
+                <fieldset class="large-12 cell">
+                  <legend>Reason for contacting <span>(Choose One)</span></legend>
+                  <input type="radio" name="why-contact" value="General Inquiry" id="general-inquiry" checked required>
+                  <label for="general-inquiry">
+                    General Inquiry
+                  </label><br />
+                  <input type="radio" name="why-contact" value="Work with me" id="business-inquiry">
+                  <label for="business-inquiry">
+                    Work with me
+                  </label>
+                </fieldset>
+              </div>
+              <div class="small-12 medium-6 cell">
+                <label>First Name
+                  <input type="text" id="fname" name="fname" pattern="[a-zA-Z0-9]+" minlength="4" maxlength="10"
+                    required>
                 </label>
-              </fieldset>
+              </div>
+              <div class="small-12 medium-6 cell">
+                <label>Last Name
+                  <input type="text" id="lname" name="lname" pattern="[a-zA-Z0-9]+" minlength="4" maxlength="10"
+                    required>
+                </label>
+              </div>
+              <div class="small-12 medium-6 cell">
+                <label>E-mail Address
+                  <input type="email" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
+                  <span class="form-example">email@email.com</span>
+                </label>
+              </div>
+              <div class="small-12 medium-6 cell">
+                <label class="optional">Phone Number
+                  <input type="text" id="phone" name="phone" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$"
+                    required>
+                  <span class="form-example">(XXX) XXX-XXXX</span>
+                </label>
+              </div>
+              <div class="medium-12 cell">
+                <label class="optional">Message <span>(Optional)</span>
+                  <textarea name="message" id="message" cols="30" rows="8"></textarea>
+                </label>
+              </div>
+              <div class="medium-12 cell">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
+              <div class="medium-12 cell">
+                <button id="send-message" name="send-message" type="submit">send the message</button>
+              </div>
             </div>
-          <div class="small-12 medium-6 cell">
-            <label>First Name
-              <input type="text" id="fname" name="fname" pattern="[a-zA-Z0-9]+" minlength="4" maxlength="10" required>
-            </label>
-          </div>
-          <div class="small-12 medium-6 cell">
-            <label>Last Name
-              <input type="text" id="lname" name="lname" pattern="[a-zA-Z0-9]+" minlength="4" maxlength="10" required>
-            </label>
-          </div>
-          <div class="small-12 medium-6 cell">
-            <label>E-mail Address
-              <input type="email" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
-              <span class="form-example">email@email.com</span>
-            </label>
-          </div>
-          <div class="small-12 medium-6 cell">
-            <label class="optional">Phone Number
-              <input type="text" id="phone" name="phone" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" required>
-              <span class="form-example">(XXX) XXX-XXXX</span>
-            </label>
-          </div>
-          <div class="medium-12 cell">
-            <label class="optional">Message <span>(Optional)</span>
-              <textarea name="message" id="message" cols="30" rows="8"></textarea>
-            </label>
-          </div>
-          <div class="medium-12 cell">
-            <div data-netlify-recaptcha="true"></div>
-          </div>
-          <div class="medium-12 cell">
-            <button id="send-message" name="send-message" type="submit">send the message</button>
-          </div>
-        </div>
-        <div class="medium-1  hide-for-small-only cell">
-          <div class="side-contact">
-          <p><a href="https://www.linkedin.com/in/alexanderwcurtis/" target="_blank" title="View LinkedIn Profile"><i class="fab fa-linkedin"></i></a></p>
-          <p><a href="https://github.com/acurtis21" target="_blank" title="View Github Profile"><i class="fab fa-github-square"></i></a></p>
-          </div>
-          
-        </div>
-        </div>
-      </div>
-    </form>
-  </div>
-</section>
+            <div class="medium-1  hide-for-small-only cell">
+              <div class="side-contact">
+                <p><a href="https://www.linkedin.com/in/alexanderwcurtis/" target="_blank"
+                    title="View LinkedIn Profile"><i class="fab fa-linkedin"></i></a></p>
+                <p><a href="https://github.com/acurtis21" target="_blank" title="View Github Profile"><i
+                      class="fab fa-github-square"></i></a></p>
+              </div>
 
-      <!-- Footer -->
-    <footer class="grid-container-fluid">
-        <div class="grid-container">
-            <ul class="footer-links" data-smooth-scroll data-animation-duration="750" >
-                <li><a href="#skillset">Skill Set</a></li>
-                <li><a href="#experience">Resum&eacute;</a></li>
-                <li><a href="#recent-work">Portfolio</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-                
-            </ul>
-            <p>&copy; <span id="current-year"></span> Alexander Curtis. All rights reserved.</p>
+            </div>
+          </div>
         </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="grid-container-fluid">
+    <div class="grid-container">
+      <ul class="footer-links" data-smooth-scroll data-animation-duration="750">
+        <li><a href="#skillset">Skill Set</a></li>
+        <li><a href="#experience">Resum&eacute;</a></li>
+        <li><a href="#recent-work">Portfolio</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+
+      </ul>
+      <p>&copy; <span id="current-year"></span> Alexander Curtis. All rights reserved.</p>
+    </div>
     </header>
-    
-    
-    
+
+
+
     <script>
       let currentYear = (new Date()).getFullYear();
       let tabs = 'li.tabs-title';
       let activeTab = `${tabs}.is-active`;
       let last = $(tabs).length - 1;
 
-      $(document).ready(function(){
+      $(document).ready(function () {
         $("#current-year")[0].innerHTML = currentYear;
         // Cycle through resume tabs
-        $("#previous-btn").on("click", function(){
-            event.preventDefault();
-            
-            if($(activeTab)[0] == $(tabs)[0])
-            {
-                $(tabs)[last].click();
-            } else {
-                $(activeTab).prev().click();
-            }
-        });
-        $("#next-btn").on("click", function(){
-            event.preventDefault();
+        $("#previous-btn").on("click", function () {
+          event.preventDefault();
 
-            if($(activeTab)[0] == $(tabs)[last])
-            {
-                $(tabs)[0].click();
-            } else {
-                $(activeTab).next().click();
-            }
+          if ($(activeTab)[0] == $(tabs)[0]) {
+            $(tabs)[last].click();
+          } else {
+            $(activeTab).prev().click();
+          }
+        });
+        $("#next-btn").on("click", function () {
+          event.preventDefault();
+
+          if ($(activeTab)[0] == $(tabs)[last]) {
+            $(tabs)[0].click();
+          } else {
+            $(activeTab).next().click();
+          }
         });
         // Mask Form Fields
         $('#phone').mask('(000) 000-0000');
-  
+
 
         $(document).foundation();
       });
     </script>
 
-  </body>
+</body>
+
 </html>

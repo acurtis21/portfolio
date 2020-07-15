@@ -391,6 +391,7 @@ ul.skill-list {
     font-size: 1em;
     font-weight: 300;
     margin: 0;
+    margin-left: -0.25em;
     position: relative;
 }
 

@@ -1120,10 +1120,6 @@ footer.grid-container-fluid>div>p {
         display: block;
     }
 
-    ul.skill-list {
-        padding-top: 1em;
-    }
-
     #skillset,
     #experience,
     #recent-work {
